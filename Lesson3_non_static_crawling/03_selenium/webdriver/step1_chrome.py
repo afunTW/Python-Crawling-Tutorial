@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
 
-class SearchWaitClick(unittest.TestCase):
+class Step0OriginalFf(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
@@ -15,12 +15,12 @@ class SearchWaitClick(unittest.TestCase):
         self.verificationErrors = []
         self.accept_next_alert = True
     
-    def test_search_wait_click(self):
+    def test_step0_original_ff(self):
         driver = self.driver
-        driver.get(self.base_url + "/search?client=ubuntu&channel=fs&q=%E7%A0%94%E4%B9%8B%E6%9C%89%E7%89%A9&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=JQY4WbbXLOL88weg7IzoDQ")
-        driver.find_element_by_css_selector("h3.r > a").click()
-        driver.find_element_by_xpath("//ul[@id='primary-menu']/li[3]/a/span/span").click()
-        driver.find_element_by_xpath("//div[@id='content']/div[2]/div[6]/article/div/p/a/i").click()
+        driver.get(self.base_url + "/search?client=ubuntu&channel=fs&q=%E6%95%85%E4%BA%8B&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=BrpoWeTTHZGC8AW25ZWYBw")
+        driver.find_element_by_link_text(u"故事| 寫給所有人的歷史").click()
+        driver.find_element_by_link_text(u"全部文章").click()
+        driver.find_element_by_css_selector("div.t-overlay-content").click()
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)

@@ -9,8 +9,7 @@ import unittest, time, re
 
 class Step0OriginalFf(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome()
-        self.driver.maximize_window()
+        self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.base_url = "https://www.google.com.tw/"
         self.verificationErrors = []
