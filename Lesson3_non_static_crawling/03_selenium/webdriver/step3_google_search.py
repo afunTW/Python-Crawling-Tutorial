@@ -18,13 +18,14 @@ search_input.send_keys(Keys.ENTER)
 print(driver.current_url)
 
 links = driver.find_elements(By.XPATH, "//h3[@class='r']/a[@href]")
+# import time
+# time.sleep(10)
 # links = driver.find_elements(By.XPATH, "//a[@href]")
 for link in links:
     try:
         title = link.text
         url = link.get_attribute('href')
         title_url = (title, url)
-        print(link)
         print(title_url)
     except Exception as e:
         print(e)
