@@ -5,7 +5,7 @@ from pprint import pprint
 url = 'https://gushi.tw'
 driver = webdriver.Chrome()
 driver.maximize_window()
-driver.implicitly_wait(50)
+driver.implicitly_wait(10)
 driver.get(url)
 pprint(driver.find_elements_by_class_name('start_animation'))
 print()
