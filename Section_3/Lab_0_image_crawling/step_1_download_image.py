@@ -27,5 +27,12 @@ opener = build_opener()
 opener.addheaders = [('User-Agent','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36')]
 install_opener(opener)
 
+# 顯示進度的 callback
+def check_percentage(chunk, chunk_size, remote_size):
+    percentage = 100.0 * chunk * chunk_size / remote_size
+    if percentage > 100.0:
+        percentage = 100.0
+    print('Download...{:.2f}%'.format(percentage))
+
 # 下載圖片
-urlretrieve(image[0]['src'], 'logo.png')
+urlretrieve(image[0]['src'], 'logo.png', check_percentage)
