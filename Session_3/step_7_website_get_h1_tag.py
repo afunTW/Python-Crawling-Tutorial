@@ -5,7 +5,7 @@ from urllib.parse import urljoin
 url = 'https://afuntw.github.io/demo-crawling/demo-page/ex1/index1.html'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'lxml')
-answer = list()
+answer = []
 
 # 取得頁面中的 h1 tag 並將結果存入 answer
 h1 = soup.find_all('h1')
