@@ -15,7 +15,7 @@ print('static get:', h2[0].text)
 
 # Selenium
 # 打開 Chrome 瀏覽器
-driver = webdriver.Chrome()
+driver = webdriver.Chrome('../webdriver/chromedriver')
 
 # 將瀏覽器視窗最大化
 driver.maximize_window()
