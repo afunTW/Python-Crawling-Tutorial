@@ -20,9 +20,6 @@ driver = webdriver.Chrome('../webdriver/chromedriver')
 # 將瀏覽器視窗最大化
 driver.maximize_window()
 
-# 等待時間設定為 10 秒, 每個 session 只需要呼叫一次這個 function
-driver.implicitly_wait(10)
-
 # 對目標網站送 request
 driver.get(url)
 
