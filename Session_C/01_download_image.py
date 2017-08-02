@@ -8,7 +8,7 @@ from urllib.request import urlretrieve
 response = requests.get('https://gushi.tw/hu-shih-memorial-hall/')
 
 # 透過 Beautifulsoup 解析網頁
-soup = BeautifulSoup(response.text, 'lxml')
+soup = BeautifulSoup(response.text)
 
 # 取得所有的 p tag 與 img tag
 text = soup.find_all('p')
