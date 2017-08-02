@@ -2,8 +2,6 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from PIL import Image
-from pprint import pprint
-
 
 def download_image(url):
     response = requests.get(url, stream=True)
