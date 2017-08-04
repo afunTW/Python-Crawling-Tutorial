@@ -52,9 +52,11 @@ while wait_list != []:
 
             # 假如是 google 短網址, 先對該 url 送 requests 然後從回應裏面看原本的 url
             if current_url.domain == 'goo' and current_url.suffix == 'gl':
+                print('Check goo.gl {}'.format(current_url))
                 check_real_url_response = requests.get(new_url)
                 new_url = check_real_url_response.url
                 current_url = extract(new_url)
+                print('{} -> {}'.format(current_url, new_url))
 
             # 檢查 subdomain 是 www 或是與當前頁面的 subdomain 相同
             check_subdomain = current_url.subdomain == 'www' or current_url.subdomain == root_url.subdomain
