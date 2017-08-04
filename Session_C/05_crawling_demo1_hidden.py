@@ -11,7 +11,7 @@ while wait_list != []:
     # 取出 wait list 裏面的第一個網址
     url = wait_list.pop(0)
     response = requests.get(url)
-    soup = BeautifulSoup(response.text)
+    soup = BeautifulSoup(response.text, 'lxml')
     print('Current website: ', url)
 
     # 取得當前頁面中的 h1 tag 並將結果存入 answer

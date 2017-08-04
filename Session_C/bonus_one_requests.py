@@ -1,6 +1,5 @@
 import re
 import requests
-from bs4 import BeautifulSoup
 from PIL import Image
 
 def download_image(url):
