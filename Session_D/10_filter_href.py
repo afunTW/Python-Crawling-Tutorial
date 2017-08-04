@@ -15,7 +15,7 @@ while wait_list != []:
     # 取出 wait list 裏面的第一個網址
     url = wait_list.pop(0)
     response = requests.get(url)
-    soup = BeautifulSoup(response.text)
+    soup = BeautifulSoup(response.text, 'lxml')
     print('Current website: ', url)
 
     # 將當前頁面存入已經看過的清單
