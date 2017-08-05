@@ -12,7 +12,7 @@ h1 = soup.find_all('h1')
 for tag in h1:
     
 
-print('Current url: {}'.format(url))
+print('Current URL: {}'.format(url))
 print('Get h1 tags: {}'.format(h1_answer))
 print()
 
@@ -33,7 +33,7 @@ for link in links:
     for tag in new_h1:
         
 
-    print('Get new url: {}'.format(new_url))
+    print('Get new URL: {}'.format(new_url))
     print('Get h1 tags: {}'.format(h1_answer))
     print()
 
