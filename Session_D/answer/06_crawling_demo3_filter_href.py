@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 
 wait_list = ['https://afuntw.github.io/demo-crawling/demo-page/ex3/index1.html']
 viewed_list = []
-answer = []
+h2_answer = []
 
 # 當 wait list 裏面還有網址發生的情況
 while wait_list != []:
@@ -16,15 +16,15 @@ while wait_list != []:
     url = wait_list.pop(0)
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
-    print('Current website: ', url)
+    print('Current URL: {}'.format(url))
 
     # 將當前頁面存入已經看過的清單
     viewed_list.append(url)
 
-    # 取得當前頁面中的 h1 tag 並將結果存入 answer
+    # 取得當前頁面中的 h1 tag 並將結果存入 h2_answer
     h1 = soup.find_all('h2')
     for tag in h1:
-        answer.append(tag.text)
+        h2_answer.append(tag.text)
 
     # 取得頁面中的 a tag
     links = soup.find_all('a', href=True)
@@ -53,6 +53,7 @@ while wait_list != []:
                 # 將新發現的超連結存入 wait list
                 wait_list.append(new_url)
 
-    print('Answer: ', answer)
-    print('Wait list: ', wait_list)
-    print('Viewed list', viewed_list, '\n')
+    print('Get h2 tags: {}'.format(h2_answer))
+    print('URL wait list: {}'.format(wait_list))
+    print('URL viewed list: {}'.format(viewed_list))
+    print()
