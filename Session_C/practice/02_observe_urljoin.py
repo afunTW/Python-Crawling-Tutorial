@@ -10,15 +10,15 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text, 'lxml')
 
 # 取得所有 img tag 中 src 符合 application-pdf.png 片段的
-images = soup.find_all('img',{'src': re.compile('application-pdf\.png')})
+images = 
 
 # 查看網頁網址的拆解片段
 print('original url: {}'.format(response.url))
 print('urlparse url: {}'.format(urlparse(response.url)))
 print()
 
-# 查看第1張圖片網址的拆解片段
-image_url = images[0].parent['href']
+# 查看第 1 張圖片網址的拆解片段
+image_url = 
 print('original url: {}'.format(image_url))
 print('urlparse url: {}'.format(urlparse(image_url)))
 print()
