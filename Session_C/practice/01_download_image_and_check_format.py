@@ -33,7 +33,7 @@ download_filename =
 print('concate filename:', download_filename)
 
 # 下載圖片
-urlretrieve(url, download_filename)
+urlretrieve( )
 
 
 # # BONUS: 不透過 stream 讓 Image 讀圖片的方式
