@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
 def recursive_h1_url(url, answer):
-    print('Current website begin: ', url)
+    print('Begin with URL: {}'.format(url))
+
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
 
@@ -18,11 +19,13 @@ def recursive_h1_url(url, answer):
     for h1_tag in h1:
         answer.append(h1_tag)
 
-    print('Current website end: ', url)
-    print('Answer: ', answer, '\n')
+    print('Get h1 tag: {}'.format(answer))
+    print('End with URL: {}'.format(url))
+    print()
 
 def h1_recursive_url(url, answer):
-    print('Current website begin: ', url)
+    print('Begin with URL: {}'.format(url))
+
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
 
@@ -37,8 +40,9 @@ def h1_recursive_url(url, answer):
         new_url = urljoin(url, link['href'])
         h1_recursive_url(new_url, answer)
 
-    print('Current website end: ', url)
-    print('Answer: ', answer, '\n')
+    print('Get h1 tag: {}'.format(answer))
+    print('End with URL: {}'.format(url))
+    print()
 
 answer_1 = []
 answer_2 = []
