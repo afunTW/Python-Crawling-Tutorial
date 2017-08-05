@@ -5,15 +5,16 @@ from urllib.parse import urljoin
 url = 'https://afuntw.github.io/demo-crawling/demo-page/ex1/index1.html'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'lxml')
-answer = []
+h1_answer = []
 
-# 取得頁面中的 h1 tag 並將結果存入 answer
+# 取得頁面中所有的 h1 tag 並將結果存入 h1_answer
 h1 = soup.find_all('h1')
 for tag in h1:
-    answer.append(tag.text)
+    h1_answer.append(tag.text)
 
-print(url)
-print('answer: ', answer, '\n\n')
+print('Current url: {}'.format(url))
+print('Get h1 tags: {}'.format(h1_answer))
+print()
 
 # 取得頁面中的 a tag
 links = soup.find_all('a', href=True)
@@ -27,12 +28,13 @@ for link in links:
     new_response = requests.get(new_url)
     new_soup = BeautifulSoup(new_response.text, 'lxml')
 
-    # 在新網頁中取得 h1 tag 並將結果存入 answer
+    # 在新網頁中取得 h1 tag 並將結果存入 h1_answer
     new_h1 = new_soup.find_all('h1')
     for tag in new_h1:
-        answer.append(tag.text)
+        h1_answer.append(tag.text)
 
-    print(new_url)
-    print('asnwer: ', answer, '\n\n')
+    print('Get new url: {}'.format(new_url))
+    print('Get h1 tags: {}'.format(h1_answer))
+    print()
 
-print('final answer: ', answer)
+print('Final h1 tags answer: {}'.format(h1_answer))
