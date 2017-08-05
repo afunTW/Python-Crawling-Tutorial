@@ -19,7 +19,7 @@ def download_image(url):
             f.write(block)
 
 def main():
-    url = 'https://www.ptt.cc/bbs/Beauty/M.1500472742.A.E4A.html'
+    url = 'https://www.ptt.cc/bbs/Beauty/M.1501931019.A.AD8.html'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
     links = soup.find_all('a', attrs={'href': True})
