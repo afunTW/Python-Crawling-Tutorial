@@ -28,27 +28,32 @@ search_input.send_keys('datasci')
 # 在搜尋欄位上按下 ENTER
 search_input.send_keys(Keys.ENTER)
 
-# 透過 XPath 取得所有網站標題與超連結
-links = driver.find_elements(By.XPATH, '//h3[@class="r"]/a[@href]')
+for i in range(2):
 
-# 另外一種透過 copy XPath 取得的網站標題與超連結
-# links = driver.find_elements(By.XPATH, '//*[@id="rso"]/div[2]/div/div/div/div/h3 | //*[@id="rso"]/div[1]/div/div/div/div/h3')
+    print('====================> Page {}'.format(i))
 
-for link in links:
-    try:
-        # 取得網站標題
-        title = link.text
+    # 透過 XPath 取得所有網站標題與超連結
+    links = driver.find_elements(By.XPATH, '//h3[@class="r"]/a[@href]')
+    # 另外一種透過 copy XPath 取得的網站標題與超連結
+    # links = driver.find_elements(By.XPATH, '//*[@id="rso"]/div[2]/div/div/div/div/h3 | //*[@id="rso"]/div[1]/div/div/div/div/h3')
 
-        # 取得網站超連結
-        url = link.get_attribute('href')
+    for link in links:
+        try:
+            # 取得網站標題
+            title = link.text
 
-        # 組合並印出訊息
-        title_url = (title, url)
-        print(title_url)
-    except Exception as e:
-        print(e)
-        driver.quit()
-        continue
+            # 取得網站超連結
+            url = link.get_attribute('href')
+
+            # 組合並印出訊息
+            title_url = (title, url)
+            print(title_url)
+
+        except Exception as e:
+            print(e)
+            continue
+
+    next_page = driver.find_element(By.XPATH, '//*[@id="pnnext"]/span[2]').click()
 
 # 關掉瀏覽器
 driver.quit()
