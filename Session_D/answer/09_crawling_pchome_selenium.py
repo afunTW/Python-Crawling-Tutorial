@@ -23,7 +23,7 @@ for item in items:
     # 品名在當前 tag 底下的 div 底下的 h5 底下的 a 裏面的 text
     title = item.find_element(By.XPATH, './div/h5/a').text
 
-# 價格在當前 tag 底下的 div 底下的 ul 底下的 li 底下的第2層 span
+    # 價格在當前 tag 底下的 div 底下的 ul 底下的 li 底下的第2層 span
     price = item.find_element(By.XPATH, './div/ul/li/span/span').text
 
     # 如果品名與價格有任一是空值, 則不處理

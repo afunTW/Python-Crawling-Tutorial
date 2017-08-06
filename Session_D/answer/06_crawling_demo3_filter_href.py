@@ -21,9 +21,9 @@ while wait_list != []:
     # 將當前頁面存入已經看過的清單
     viewed_list.append(url)
 
-    # 取得當前頁面中的 h1 tag 並將結果存入 h2_answer
-    h1 = soup.find_all('h2')
-    for tag in h1:
+    # 取得當前頁面中的 h2 tag 並將結果存入 h2_answer
+    h2 = soup.find_all('h2')
+    for tag in h2:
         h2_answer.append(tag.text)
 
     # 取得頁面中的 a tag
