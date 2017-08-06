@@ -34,26 +34,26 @@ while wait_list != []:
         new_url = urljoin(url, link['href'])
 
         # 過濾錨點, 不需要再對相同的網頁送 request
-        check_anchor = not re.match('#.*', link['href'])
+        check_anchor = not re.match()
 
         # 過濾程式碼
-        check_code = not re.match('^javascript.*', link['href'])
+        check_code = not re.match()
 
         # 過濾協定, 只取 http 或是 https
         # Hint: 若原本 href 是相對路徑則沒有協定, 要先透過 urljoin 取得絕對路徑
-        check_protocol = urlparse(new_url).scheme in ['http', 'https']
+        check_protocol = urlparse().scheme in ['http', 'https']
 
         # 實際過濾的判斷式
         if check_anchor and check_code and check_protocol:
 
             # 對當前 url 與新的 url 做 extract 分析網域
-            root_url = extract(url)
-            current_url = extract(new_url)
+            root_url = extract()
+            current_url = extract()
             print('root_url extract: {}'.format(root_url))
             print('current_url extract: {}'.format(current_url))
 
             # 檢查 subdomain 是 www 或是與當前頁面的 subdomain 相同
-            check_subdomain = current_url.subdomain == 'www' or current_url.subdomain == root_url.subdomain
+            check_subdomain = 
 
             # 檢查新的 url 要與當前頁面的 domain 相同, 且符合 subdomain 需求
             if root_url.domain == current_url.domain and check_subdomain:
