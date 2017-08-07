@@ -1,0 +1,1133 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TaipeiBO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='/images/tab.ico' rel='icon'/>
+<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="/css/sky-forms.css" type="text/css">
+<link rel="stylesheet" href="/js/owl.carousel/assets/owl.carousel.css">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<header>
+   <nav  class="navbar " role="navigation">
+    <div class="container">
+      <div id="n-all"> <a class="navbar-brand" href="/"><img src="/images/taipeipo_logo.png" width="230" height="50"></a>      
+         <div class="n-right-box">    
+          <a href="https://www.facebook.com/taipeibo/?fref=ts" class="fb-top" target="_blank">  <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> </a>
+        </div>
+      </div>
+     
+    </div>
+  </nav>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89920310-1', 'auto');
+  ga('send', 'pageview');
+
+</script></header>
+<div id="all-box">
+  <div class=" main-nav">
+        <ul>
+      <li> <a class="" href="/"> 單日票房</a> </li>
+      <li> <a class="" href="/weekly">單週票房</a> </li>
+      <li> <a class="" href="/yearly">年度週末冠軍</a> </li>
+      <li> <a class="sel" href="/year">年度排名</a> </li>
+      <li> <a class="" href="/schedule">電影上映檔期表</a> </li> 
+    </ul>  </div>
+  <div class="main-box">
+    <div class="top-t">
+      <form class="sky-form">
+        <div class="top-form">
+           			<label class="select">
+            <select name="" id="option">
+              <option value=""   >單日票房</option>
+              <option value="weekly"   >單週票房</option>
+              <option value="yearly"   >年度週末冠軍</option>
+              <option value="year" selected  disabled>年度排名</option>
+              <option value="schedule"   >電影上映檔期表</option>
+            </select>
+            <i></i> 
+          </label>
+
+
+	<script>
+		$(document).ready(function(){
+				$("#option" ).change(function() {
+					var date = $('#option').val();
+					location = '/'+date+'';
+					return false;
+				});
+		});
+	</script>        </div>
+        <div class="sel-info-2">
+         
+          <div class="sel-5"> 
+                         <a href="/year/2016"> <i class="fa fa-caret-left" aria-hidden="true"></i> 前一年 
+            </a> 
+                        </div>
+        
+          <div class="sel-4"> 2017 年 </div>
+        
+          <div class="sel-6"> 
+                      </div>
+          
+          <div class="clearfix"> </div>
+        </div>
+      </form>
+    </div>
+    
+    <!--表格-->
+    
+    <div class="container">
+      <div class=" tab-box">
+        <table class="table table-striped table-bordered  text-center rwd-table" width="100%"  >
+          <tr class="tb-top">
+            <th>排名</th>
+            <th>中文片名</th>
+            <th>英文片名</th>
+            <th>院數</th>
+            <th>映期</th>
+            <th>上映日期</th>
+            <th >平均票房</th>
+            <th class="import">累積票房</th>
+
+            
+          </tr>
+                                              <tr>
+                <td class="list-r8 o-n" data-th="排名" >1</td>
+                <td class="list-r1" data-th="中文片名" >玩命關頭8</td>
+                <td class="list-r2" data-th="英文片名" >Fast &amp; Furious 8</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >56</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/12</td>
+                <td class="list-r6" data-th="平均票房">7,324,925</td>
+                <td class="import list-r7" data-th="累積票房">183,123,130</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >2</td>
+                <td class="list-r1" data-th="中文片名" >神力女超人</td>
+                <td class="list-r2" data-th="英文片名" >Wonder Woman</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >45</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/30</td>
+                <td class="list-r6" data-th="平均票房">5,133,295</td>
+                <td class="import list-r7" data-th="累積票房">123,199,087</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >3</td>
+                <td class="list-r1" data-th="中文片名" >神鬼傳奇</td>
+                <td class="list-r2" data-th="英文片名" >The Mummy</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >37</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/07</td>
+                <td class="list-r6" data-th="平均票房">3,720,671</td>
+                <td class="import list-r7" data-th="累積票房">93,016,786</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >4</td>
+                <td class="list-r1" data-th="中文片名" >美女與野獸</td>
+                <td class="list-r2" data-th="英文片名" >Beauty and the Beast</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >95</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/16</td>
+                <td class="list-r6" data-th="平均票房">3,642,122</td>
+                <td class="import list-r7" data-th="累積票房">91,053,051</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >5</td>
+                <td class="list-r1" data-th="中文片名" >羅根</td>
+                <td class="list-r2" data-th="英文片名" >Logan</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >82</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/03</td>
+                <td class="list-r6" data-th="平均票房">3,436,112</td>
+                <td class="import list-r7" data-th="累積票房">85,902,807</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >6</td>
+                <td class="list-r1" data-th="中文片名" >金剛：骷髏島</td>
+                <td class="list-r2" data-th="英文片名" >Kong: Skull Island</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >87</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/09</td>
+                <td class="list-r6" data-th="平均票房">3,005,872</td>
+                <td class="import list-r7" data-th="累積票房">75,146,798</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >7</td>
+                <td class="list-r1" data-th="中文片名" >加勒比海盜 神鬼奇航：死無對證</td>
+                <td class="list-r2" data-th="英文片名" >Pirates of the Caribbean: Dead Men Tell No Tales</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >51</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/24</td>
+                <td class="list-r6" data-th="平均票房">2,867,756</td>
+                <td class="import list-r7" data-th="累積票房">71,693,896</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >8</td>
+                <td class="list-r1" data-th="中文片名" >惡靈古堡：最終章</td>
+                <td class="list-r2" data-th="英文片名" >Resident Evil: The Final Chapter</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >70</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/26</td>
+                <td class="list-r6" data-th="平均票房">3,065,794</td>
+                <td class="import list-r7" data-th="累積票房">70,513,251</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >9</td>
+                <td class="list-r1" data-th="中文片名" >我和我的冠軍女兒</td>
+                <td class="list-r2" data-th="英文片名" >Dangal</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >112</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/24</td>
+                <td class="list-r6" data-th="平均票房">3,774,662</td>
+                <td class="import list-r7" data-th="累積票房">67,943,922</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >10</td>
+                <td class="list-r1" data-th="中文片名" >蜘蛛人：返校日</td>
+                <td class="list-r2" data-th="英文片名" >Spider-Man: Homecoming</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >9</td>
+                <td class="list-r5" data-th="上映日期" >2017/07/05</td>
+                <td class="list-r6" data-th="平均票房">2,652,688</td>
+                <td class="import list-r7" data-th="累積票房">66,317,198</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >11</td>
+                <td class="list-r1" data-th="中文片名" >分裂</td>
+                <td class="list-r2" data-th="英文片名" >Split</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >81</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/03</td>
+                <td class="list-r6" data-th="平均票房">3,130,398</td>
+                <td class="import list-r7" data-th="累積票房">65,738,368</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >12</td>
+                <td class="list-r1" data-th="中文片名" >變形金剛5：最終騎士</td>
+                <td class="list-r2" data-th="英文片名" >Transformers: The Last Knight</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >23</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/21</td>
+                <td class="list-r6" data-th="平均票房">2,503,075</td>
+                <td class="import list-r7" data-th="累積票房">62,576,869</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >13</td>
+                <td class="list-r1" data-th="中文片名" >星際異攻隊2</td>
+                <td class="list-r2" data-th="英文片名" >Guardians of the Galaxy Vol. 2</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >51</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/26</td>
+                <td class="list-r6" data-th="平均票房">2,304,168</td>
+                <td class="import list-r7" data-th="累積票房">55,300,025</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >14</td>
+                <td class="list-r1" data-th="中文片名" >限制級戰警：重返極限</td>
+                <td class="list-r2" data-th="英文片名" >xXx: Return of Xander Cage</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >63</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/20</td>
+                <td class="list-r6" data-th="平均票房">2,205,884</td>
+                <td class="import list-r7" data-th="累積票房">55,147,095</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >15</td>
+                <td class="list-r1" data-th="中文片名" >神偷奶爸3</td>
+                <td class="list-r2" data-th="英文片名" >Despicable Me 3</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >15</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/29</td>
+                <td class="list-r6" data-th="平均票房">1,830,031</td>
+                <td class="import list-r7" data-th="累積票房">43,920,744</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >16</td>
+                <td class="list-r1" data-th="中文片名" >寶貝老闆</td>
+                <td class="list-r2" data-th="英文片名" >Boss Baby</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >95</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/31</td>
+                <td class="list-r6" data-th="平均票房">1,515,009</td>
+                <td class="import list-r7" data-th="累積票房">33,330,190</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >17</td>
+                <td class="list-r1" data-th="中文片名" >海洋奇緣</td>
+                <td class="list-r2" data-th="英文片名" >Moana</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >99</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/26</td>
+                <td class="list-r6" data-th="平均票房">1,500,187</td>
+                <td class="import list-r7" data-th="累積票房">33,004,105</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >18</td>
+                <td class="list-r1" data-th="中文片名" >攻殼機動隊</td>
+                <td class="list-r2" data-th="英文片名" >Ghost in the Shell</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >62</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/30</td>
+                <td class="list-r6" data-th="平均票房">1,276,352</td>
+                <td class="import list-r7" data-th="累積票房">31,908,789</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >19</td>
+                <td class="list-r1" data-th="中文片名" >異形：聖約</td>
+                <td class="list-r2" data-th="英文片名" >Alien: Covenant</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >42</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/10</td>
+                <td class="list-r6" data-th="平均票房">1,320,744</td>
+                <td class="import list-r7" data-th="累積票房">31,697,863</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >20</td>
+                <td class="list-r1" data-th="中文片名" >格雷的五十道陰影：束縛</td>
+                <td class="list-r2" data-th="英文片名" >Fifty Shades Darker</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >69</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/10</td>
+                <td class="list-r6" data-th="平均票房">1,222,262</td>
+                <td class="import list-r7" data-th="累積票房">30,556,552</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >21</td>
+                <td class="list-r1" data-th="中文片名" >關鍵少數</td>
+                <td class="list-r2" data-th="英文片名" >Hidden Figures</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >83</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/13</td>
+                <td class="list-r6" data-th="平均票房">1,216,828</td>
+                <td class="import list-r7" data-th="累積票房">29,203,864</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >22</td>
+                <td class="list-r1" data-th="中文片名" >捍衛任務2：殺神回歸</td>
+                <td class="list-r2" data-th="英文片名" >John Wick: Chapter Two</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >71</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/10</td>
+                <td class="list-r6" data-th="平均票房">1,415,609</td>
+                <td class="import list-r7" data-th="累積票房">28,312,179</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >23</td>
+                <td class="list-r1" data-th="中文片名" >吃吃的愛</td>
+                <td class="list-r2" data-th="英文片名" >Didi's Dreams</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >40</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/26</td>
+                <td class="list-r6" data-th="平均票房">1,463,348</td>
+                <td class="import list-r7" data-th="累積票房">26,340,261</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >24</td>
+                <td class="list-r1" data-th="中文片名" >電影版聲之形</td>
+                <td class="list-r2" data-th="英文片名" >A Silent Voice: The Movie </td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >65</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/24</td>
+                <td class="list-r6" data-th="平均票房">1,390,670</td>
+                <td class="import list-r7" data-th="累積票房">25,032,063</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >25</td>
+                <td class="list-r1" data-th="中文片名" >海灘救護隊</td>
+                <td class="list-r2" data-th="英文片名" >Baywatch</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >41</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/25</td>
+                <td class="list-r6" data-th="平均票房">1,187,085</td>
+                <td class="import list-r7" data-th="累積票房">24,928,789</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >26</td>
+                <td class="list-r1" data-th="中文片名" >為了與你相遇</td>
+                <td class="list-r2" data-th="英文片名" >A Dog's Purpose</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >69</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/24</td>
+                <td class="list-r6" data-th="平均票房">1,024,584</td>
+                <td class="import list-r7" data-th="累積票房">24,590,015</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >27</td>
+                <td class="list-r1" data-th="中文片名" >逃出絕命鎮</td>
+                <td class="list-r2" data-th="英文片名" >Get Out</td>
+                <td class="list-r3"  data-th="院數">19</td>
+                <td class="list-r4" data-th="映期" >39</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/05</td>
+                <td class="list-r6" data-th="平均票房">1,213,272</td>
+                <td class="import list-r7" data-th="累積票房">23,052,163</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >28</td>
+                <td class="list-r1" data-th="中文片名" >目擊者</td>
+                <td class="list-r2" data-th="英文片名" >Who killed Cock Robin?</td>
+                <td class="list-r3"  data-th="院數">17</td>
+                <td class="list-r4" data-th="映期" >70</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/31</td>
+                <td class="list-r6" data-th="平均票房">1,199,816</td>
+                <td class="import list-r7" data-th="累積票房">20,396,880</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >29</td>
+                <td class="list-r1" data-th="中文片名" >亞瑟：王者之劍</td>
+                <td class="list-r2" data-th="英文片名" >King Arthur: Legend of the Sword</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >41</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/12</td>
+                <td class="list-r6" data-th="平均票房">746,827</td>
+                <td class="import list-r7" data-th="累積票房">18,670,670</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >30</td>
+                <td class="list-r1" data-th="中文片名" >佈局</td>
+                <td class="list-r2" data-th="英文片名" >The Invisible Guest</td>
+                <td class="list-r3"  data-th="院數">11</td>
+                <td class="list-r4" data-th="映期" >42</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/02</td>
+                <td class="list-r6" data-th="平均票房">1,627,024</td>
+                <td class="import list-r7" data-th="累積票房">17,897,262</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >31</td>
+                <td class="list-r1" data-th="中文片名" >52赫茲 我愛你</td>
+                <td class="list-r2" data-th="英文片名" >52Hz, I Love You</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >57</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/26</td>
+                <td class="list-r6" data-th="平均票房">686,997</td>
+                <td class="import list-r7" data-th="累積票房">16,487,933</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >32</td>
+                <td class="list-r1" data-th="中文片名" >刀劍神域劇場版-序列爭戰</td>
+                <td class="list-r2" data-th="英文片名" >Sword Art Online The Movie: Ordinal Scale </td>
+                <td class="list-r3"  data-th="院數">11</td>
+                <td class="list-r4" data-th="映期" >44</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/24</td>
+                <td class="list-r6" data-th="平均票房">1,440,516</td>
+                <td class="import list-r7" data-th="累積票房">15,845,679</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >33</td>
+                <td class="list-r1" data-th="中文片名" >天才的禮物</td>
+                <td class="list-r2" data-th="英文片名" >Gifted</td>
+                <td class="list-r3"  data-th="院數">19</td>
+                <td class="list-r4" data-th="映期" >50</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/28</td>
+                <td class="list-r6" data-th="平均票房">833,356</td>
+                <td class="import list-r7" data-th="累積票房">15,833,770</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >34</td>
+                <td class="list-r1" data-th="中文片名" >同盟鶼鰈</td>
+                <td class="list-r2" data-th="英文片名" >Allied</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >56</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/06</td>
+                <td class="list-r6" data-th="平均票房">593,942</td>
+                <td class="import list-r7" data-th="累積票房">14,848,555</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >35</td>
+                <td class="list-r1" data-th="中文片名" >健忘村</td>
+                <td class="list-r2" data-th="英文片名" >The Village of No Return</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >60</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/26</td>
+                <td class="list-r6" data-th="平均票房">537,449</td>
+                <td class="import list-r7" data-th="累積票房">13,436,229</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >36</td>
+                <td class="list-r1" data-th="中文片名" >愛國者行動</td>
+                <td class="list-r2" data-th="英文片名" >Patriots Day</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >57</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/24</td>
+                <td class="list-r6" data-th="平均票房">734,809</td>
+                <td class="import list-r7" data-th="累積票房">13,226,560</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >37</td>
+                <td class="list-r1" data-th="中文片名" >異星入境</td>
+                <td class="list-r2" data-th="英文片名" >Arrival</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >75</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/10</td>
+                <td class="list-r6" data-th="平均票房">546,240</td>
+                <td class="import list-r7" data-th="累積票房">12,563,521</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >38</td>
+                <td class="list-r1" data-th="中文片名" >大釣哥</td>
+                <td class="list-r2" data-th="英文片名" >Hanky Panky</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >52</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/26</td>
+                <td class="list-r6" data-th="平均票房">684,531</td>
+                <td class="import list-r7" data-th="累積票房">12,321,563</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >39</td>
+                <td class="list-r1" data-th="中文片名" >異星智慧</td>
+                <td class="list-r2" data-th="英文片名" >Life</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >50</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/23</td>
+                <td class="list-r6" data-th="平均票房">510,105</td>
+                <td class="import list-r7" data-th="累積票房">11,732,409</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >40</td>
+                <td class="list-r1" data-th="中文片名" >喜歡你</td>
+                <td class="list-r2" data-th="英文片名" >This is Not What I Expected</td>
+                <td class="list-r3"  data-th="院數">17</td>
+                <td class="list-r4" data-th="映期" >48</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/05</td>
+                <td class="list-r6" data-th="平均票房">623,234</td>
+                <td class="import list-r7" data-th="累積票房">10,594,980</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >41</td>
+                <td class="list-r1" data-th="中文片名" >海邊的曼徹斯特</td>
+                <td class="list-r2" data-th="英文片名" >Manchester by the Sea</td>
+                <td class="list-r3"  data-th="院數">8</td>
+                <td class="list-r4" data-th="映期" >93</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/26</td>
+                <td class="list-r6" data-th="平均票房">1,181,865</td>
+                <td class="import list-r7" data-th="累積票房">9,454,919</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >42</td>
+                <td class="list-r1" data-th="中文片名" >樂高蝙蝠俠電影</td>
+                <td class="list-r2" data-th="英文片名" >The LEGO Batman Movie</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >51</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/04</td>
+                <td class="list-r6" data-th="平均票房">416,120</td>
+                <td class="import list-r7" data-th="累積票房">9,154,637</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >43</td>
+                <td class="list-r1" data-th="中文片名" >金剛戰士</td>
+                <td class="list-r2" data-th="英文片名" >Power Rangers</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >22</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/24</td>
+                <td class="list-r6" data-th="平均票房">429,346</td>
+                <td class="import list-r7" data-th="累積票房">8,586,916</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >44</td>
+                <td class="list-r1" data-th="中文片名" >沉默</td>
+                <td class="list-r2" data-th="英文片名" >Silence</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >57</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/17</td>
+                <td class="list-r6" data-th="平均票房">383,183</td>
+                <td class="import list-r7" data-th="累積票房">8,046,844</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >45</td>
+                <td class="list-r1" data-th="中文片名" >驗屍官</td>
+                <td class="list-r2" data-th="英文片名" >The Autopsy of Jane Doe</td>
+                <td class="list-r3"  data-th="院數">14</td>
+                <td class="list-r4" data-th="映期" >42</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/05</td>
+                <td class="list-r6" data-th="平均票房">562,026</td>
+                <td class="import list-r7" data-th="累積票房">7,868,359</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >46</td>
+                <td class="list-r1" data-th="中文片名" >明天，我要和昨天的妳約會</td>
+                <td class="list-r2" data-th="英文片名" >My Tomorrow, Your Yesterday </td>
+                <td class="list-r3"  data-th="院數">8</td>
+                <td class="list-r4" data-th="映期" >105</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/10</td>
+                <td class="list-r6" data-th="平均票房">958,299</td>
+                <td class="import list-r7" data-th="累積票房">7,666,394</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >47</td>
+                <td class="list-r1" data-th="中文片名" >救命解藥</td>
+                <td class="list-r2" data-th="英文片名" >A Cure for Wellness</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >49</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/17</td>
+                <td class="list-r6" data-th="平均票房">366,203</td>
+                <td class="import list-r7" data-th="累積票房">7,324,067</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >48</td>
+                <td class="list-r1" data-th="中文片名" >拆彈專家</td>
+                <td class="list-r2" data-th="英文片名" >Shock Wave</td>
+                <td class="list-r3"  data-th="院數">16</td>
+                <td class="list-r4" data-th="映期" >52</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/21</td>
+                <td class="list-r6" data-th="平均票房">445,585</td>
+                <td class="import list-r7" data-th="累積票房">7,129,367</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >49</td>
+                <td class="list-r1" data-th="中文片名" >夜行人生</td>
+                <td class="list-r2" data-th="英文片名" >Live by Night</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >49</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/13</td>
+                <td class="list-r6" data-th="平均票房">263,999</td>
+                <td class="import list-r7" data-th="累積票房">6,599,969</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >50</td>
+                <td class="list-r1" data-th="中文片名" >名偵探柯南EPISODE&quot;ONE&quot;變小的名偵探</td>
+                <td class="list-r2" data-th="英文片名" >Detective Conan: Episode &quot;ONE&quot; </td>
+                <td class="list-r3"  data-th="院數">16</td>
+                <td class="list-r4" data-th="映期" >39</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/20</td>
+                <td class="list-r6" data-th="平均票房">388,295</td>
+                <td class="import list-r7" data-th="累積票房">6,212,712</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >51</td>
+                <td class="list-r1" data-th="中文片名" >春嬌救志明</td>
+                <td class="list-r2" data-th="英文片名" >Love Off the Cuff</td>
+                <td class="list-r3"  data-th="院數">16</td>
+                <td class="list-r4" data-th="映期" >52</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/28</td>
+                <td class="list-r6" data-th="平均票房">385,753</td>
+                <td class="import list-r7" data-th="累積票房">6,172,042</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >52</td>
+                <td class="list-r1" data-th="中文片名" >攻敵必救</td>
+                <td class="list-r2" data-th="英文片名" >Miss Sloane</td>
+                <td class="list-r3"  data-th="院數">14</td>
+                <td class="list-r4" data-th="映期" >89</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/03</td>
+                <td class="list-r6" data-th="平均票房">435,829</td>
+                <td class="import list-r7" data-th="累積票房">6,101,608</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >53</td>
+                <td class="list-r1" data-th="中文片名" >漫漫回家路</td>
+                <td class="list-r2" data-th="英文片名" >Lion</td>
+                <td class="list-r3"  data-th="院數">14</td>
+                <td class="list-r4" data-th="映期" >78</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/03</td>
+                <td class="list-r6" data-th="平均票房">425,690</td>
+                <td class="import list-r7" data-th="累積票房">5,959,657</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >54</td>
+                <td class="list-r1" data-th="中文片名" >失眠</td>
+                <td class="list-r2" data-th="英文片名" >The Sleep Curse</td>
+                <td class="list-r3"  data-th="院數">9</td>
+                <td class="list-r4" data-th="映期" >42</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/02</td>
+                <td class="list-r6" data-th="平均票房">599,481</td>
+                <td class="import list-r7" data-th="累積票房">5,395,328</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >55</td>
+                <td class="list-r1" data-th="中文片名" >功夫瑜伽</td>
+                <td class="list-r2" data-th="英文片名" >Kung Fu Yoga</td>
+                <td class="list-r3"  data-th="院數">13</td>
+                <td class="list-r4" data-th="映期" >32</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/26</td>
+                <td class="list-r6" data-th="平均票房">388,233</td>
+                <td class="import list-r7" data-th="累積票房">5,047,034</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >56</td>
+                <td class="list-r1" data-th="中文片名" >直播風暴</td>
+                <td class="list-r2" data-th="英文片名" >The Circle</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >34</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/19</td>
+                <td class="list-r6" data-th="平均票房">236,086</td>
+                <td class="import list-r7" data-th="累積票房">4,721,726</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >57</td>
+                <td class="list-r1" data-th="中文片名" >月光下的藍色男孩</td>
+                <td class="list-r2" data-th="英文片名" >Moonlight</td>
+                <td class="list-r3"  data-th="院數">8</td>
+                <td class="list-r4" data-th="映期" >46</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/03</td>
+                <td class="list-r6" data-th="平均票房">586,782</td>
+                <td class="import list-r7" data-th="累積票房">4,694,255</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >58</td>
+                <td class="list-r1" data-th="中文片名" >猩球崛起：終極決戰</td>
+                <td class="list-r2" data-th="英文片名" >War for the Planet of the Apes</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >1</td>
+                <td class="list-r5" data-th="上映日期" >2017/07/13</td>
+                <td class="list-r6" data-th="平均票房">190,823</td>
+                <td class="import list-r7" data-th="累積票房">4,579,758</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >59</td>
+                <td class="list-r1" data-th="中文片名" >她其實沒那麼壞</td>
+                <td class="list-r2" data-th="英文片名" >The Last Word</td>
+                <td class="list-r3"  data-th="院數">10</td>
+                <td class="list-r4" data-th="映期" >55</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/10</td>
+                <td class="list-r6" data-th="平均票房">448,685</td>
+                <td class="import list-r7" data-th="累積票房">4,486,845</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >60</td>
+                <td class="list-r1" data-th="中文片名" >守護者聯盟</td>
+                <td class="list-r2" data-th="英文片名" >The Guardians</td>
+                <td class="list-r3"  data-th="院數">16</td>
+                <td class="list-r4" data-th="映期" >27</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/24</td>
+                <td class="list-r6" data-th="平均票房">260,036</td>
+                <td class="import list-r7" data-th="累積票房">4,160,568</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >61</td>
+                <td class="list-r1" data-th="中文片名" >別敲兩次門</td>
+                <td class="list-r2" data-th="英文片名" >Don't Knock Twice</td>
+                <td class="list-r3"  data-th="院數">10</td>
+                <td class="list-r4" data-th="映期" >26</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/13</td>
+                <td class="list-r6" data-th="平均票房">408,353</td>
+                <td class="import list-r7" data-th="累積票房">4,083,527</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >62</td>
+                <td class="list-r1" data-th="中文片名" >雖然媽媽說我不可以嫁去日本。</td>
+                <td class="list-r2" data-th="英文片名" >Mom Thinks I Am Crazy to Marry a Japanese Guy </td>
+                <td class="list-r3"  data-th="院數">10</td>
+                <td class="list-r4" data-th="映期" >28</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/16</td>
+                <td class="list-r6" data-th="平均票房">404,297</td>
+                <td class="import list-r7" data-th="累積票房">4,042,969</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >63</td>
+                <td class="list-r1" data-th="中文片名" >搶救千金</td>
+                <td class="list-r2" data-th="英文片名" >Snatched</td>
+                <td class="list-r3"  data-th="院數">19</td>
+                <td class="list-r4" data-th="映期" >21</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/16</td>
+                <td class="list-r6" data-th="平均票房">207,446</td>
+                <td class="import list-r7" data-th="累積票房">3,941,473</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >64</td>
+                <td class="list-r1" data-th="中文片名" >速食遊戲</td>
+                <td class="list-r2" data-th="英文片名" >The Founder</td>
+                <td class="list-r3"  data-th="院數">15</td>
+                <td class="list-r4" data-th="映期" >74</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/06</td>
+                <td class="list-r6" data-th="平均票房">259,153</td>
+                <td class="import list-r7" data-th="累積票房">3,887,288</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >65</td>
+                <td class="list-r1" data-th="中文片名" >限時救援</td>
+                <td class="list-r2" data-th="英文片名" >Sleepless</td>
+                <td class="list-r3"  data-th="院數">15</td>
+                <td class="list-r4" data-th="映期" >36</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/17</td>
+                <td class="list-r6" data-th="平均票房">242,165</td>
+                <td class="import list-r7" data-th="累積票房">3,632,470</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >66</td>
+                <td class="list-r1" data-th="中文片名" >2點22分</td>
+                <td class="list-r2" data-th="英文片名" >2:22</td>
+                <td class="list-r3"  data-th="院數">13</td>
+                <td class="list-r4" data-th="映期" >14</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/30</td>
+                <td class="list-r6" data-th="平均票房">277,849</td>
+                <td class="import list-r7" data-th="累積票房">3,612,041</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >67</td>
+                <td class="list-r1" data-th="中文片名" >怪獸卡車</td>
+                <td class="list-r2" data-th="英文片名" >Monster Trucks</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >29</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/13</td>
+                <td class="list-r6" data-th="平均票房">161,127</td>
+                <td class="import list-r7" data-th="累積票房">3,544,783</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >68</td>
+                <td class="list-r1" data-th="中文片名" >神秘家族</td>
+                <td class="list-r2" data-th="英文片名" >The Mysterious Family</td>
+                <td class="list-r3"  data-th="院數">14</td>
+                <td class="list-r4" data-th="映期" >21</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/19</td>
+                <td class="list-r6" data-th="平均票房">248,587</td>
+                <td class="import list-r7" data-th="累積票房">3,480,224</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >69</td>
+                <td class="list-r1" data-th="中文片名" >柯羅索巨獸</td>
+                <td class="list-r2" data-th="英文片名" >Colossal</td>
+                <td class="list-r3"  data-th="院數">17</td>
+                <td class="list-r4" data-th="映期" >49</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/21</td>
+                <td class="list-r6" data-th="平均票房">204,434</td>
+                <td class="import list-r7" data-th="累積票房">3,475,374</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >70</td>
+                <td class="list-r1" data-th="中文片名" >台北物語</td>
+                <td class="list-r2" data-th="英文片名" >Story of Taipei</td>
+                <td class="list-r3"  data-th="院數">3</td>
+                <td class="list-r4" data-th="映期" >38</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/19</td>
+                <td class="list-r6" data-th="平均票房">1,126,442</td>
+                <td class="import list-r7" data-th="累積票房">3,379,325</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >71</td>
+                <td class="list-r1" data-th="中文片名" >心靈小屋</td>
+                <td class="list-r2" data-th="英文片名" >The Shack</td>
+                <td class="list-r3"  data-th="院數">6</td>
+                <td class="list-r4" data-th="映期" >49</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/12</td>
+                <td class="list-r6" data-th="平均票房">538,775</td>
+                <td class="import list-r7" data-th="累積票房">3,232,650</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >72</td>
+                <td class="list-r1" data-th="中文片名" >當他們認真編織時</td>
+                <td class="list-r2" data-th="英文片名" >Close-Knit </td>
+                <td class="list-r3"  data-th="院數">10</td>
+                <td class="list-r4" data-th="映期" >36</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/10</td>
+                <td class="list-r6" data-th="平均票房">313,805</td>
+                <td class="import list-r7" data-th="累積票房">3,138,049</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >73</td>
+                <td class="list-r1" data-th="中文片名" >日常對話</td>
+                <td class="list-r2" data-th="英文片名" >Small Talk</td>
+                <td class="list-r3"  data-th="院數">8</td>
+                <td class="list-r4" data-th="映期" >42</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/14</td>
+                <td class="list-r6" data-th="平均票房">392,084</td>
+                <td class="import list-r7" data-th="累積票房">3,136,671</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >74</td>
+                <td class="list-r1" data-th="中文片名" >七夜怪譚</td>
+                <td class="list-r2" data-th="英文片名" >Rings</td>
+                <td class="list-r3"  data-th="院數">17</td>
+                <td class="list-r4" data-th="映期" >27</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/17</td>
+                <td class="list-r6" data-th="平均票房">179,583</td>
+                <td class="import list-r7" data-th="累積票房">3,052,919</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >75</td>
+                <td class="list-r1" data-th="中文片名" >偷天劫車手</td>
+                <td class="list-r2" data-th="英文片名" >Collide</td>
+                <td class="list-r3"  data-th="院數">19</td>
+                <td class="list-r4" data-th="映期" >27</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/24</td>
+                <td class="list-r6" data-th="平均票房">154,958</td>
+                <td class="import list-r7" data-th="累積票房">2,944,207</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >76</td>
+                <td class="list-r1" data-th="中文片名" >辦公室大狂殺</td>
+                <td class="list-r2" data-th="英文片名" >The Belko Experiment</td>
+                <td class="list-r3"  data-th="院數">10</td>
+                <td class="list-r4" data-th="映期" >21</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/07</td>
+                <td class="list-r6" data-th="平均票房">291,940</td>
+                <td class="import list-r7" data-th="累積票房">2,919,395</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >77</td>
+                <td class="list-r1" data-th="中文片名" >園長夫人：動物園的奇蹟</td>
+                <td class="list-r2" data-th="英文片名" >The Zookeeper's Wife</td>
+                <td class="list-r3"  data-th="院數">13</td>
+                <td class="list-r4" data-th="映期" >29</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/19</td>
+                <td class="list-r6" data-th="平均票房">219,255</td>
+                <td class="import list-r7" data-th="累積票房">2,850,321</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >78</td>
+                <td class="list-r1" data-th="中文片名" >深海鯊機</td>
+                <td class="list-r2" data-th="英文片名" >47 Meters Down</td>
+                <td class="list-r3"  data-th="院數">13</td>
+                <td class="list-r4" data-th="映期" >14</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/30</td>
+                <td class="list-r6" data-th="平均票房">202,282</td>
+                <td class="import list-r7" data-th="累積票房">2,629,666</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >79</td>
+                <td class="list-r1" data-th="中文片名" >第一夫人的秘密</td>
+                <td class="list-r2" data-th="英文片名" >Jackie</td>
+                <td class="list-r3"  data-th="院數">14</td>
+                <td class="list-r4" data-th="映期" >22</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/24</td>
+                <td class="list-r6" data-th="平均票房">181,275</td>
+                <td class="import list-r7" data-th="累積票房">2,537,847</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >80</td>
+                <td class="list-r1" data-th="中文片名" >拆彈少年</td>
+                <td class="list-r2" data-th="英文片名" >Land of Mine</td>
+                <td class="list-r3"  data-th="院數">6</td>
+                <td class="list-r4" data-th="映期" >70</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/13</td>
+                <td class="list-r6" data-th="平均票房">404,005</td>
+                <td class="import list-r7" data-th="累積票房">2,424,032</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >81</td>
+                <td class="list-r1" data-th="中文片名" >與妳的第100次愛戀</td>
+                <td class="list-r2" data-th="英文片名" >The 100th Love with You </td>
+                <td class="list-r3"  data-th="院數">10</td>
+                <td class="list-r4" data-th="映期" >28</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/05</td>
+                <td class="list-r6" data-th="平均票房">213,587</td>
+                <td class="import list-r7" data-th="累積票房">2,135,865</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >82</td>
+                <td class="list-r1" data-th="中文片名" >巧虎 繪本王國歷險記</td>
+                <td class="list-r2" data-th="英文片名" >しまじろうと えほんのくに</td>
+                <td class="list-r3"  data-th="院數">12</td>
+                <td class="list-r4" data-th="映期" >65</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/13</td>
+                <td class="list-r6" data-th="平均票房">174,208</td>
+                <td class="import list-r7" data-th="累積票房">2,090,491</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >83</td>
+                <td class="list-r1" data-th="中文片名" >林北小舞</td>
+                <td class="list-r2" data-th="英文片名" >The Gangster's Daughter</td>
+                <td class="list-r3"  data-th="院數">11</td>
+                <td class="list-r4" data-th="映期" >28</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/10</td>
+                <td class="list-r6" data-th="平均票房">183,896</td>
+                <td class="import list-r7" data-th="累積票房">2,022,857</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >84</td>
+                <td class="list-r1" data-th="中文片名" >電影版 影子籃球員 LAST GAME</td>
+                <td class="list-r2" data-th="英文片名" >Kuroko’s Basketball the Movie: Last Game </td>
+                <td class="list-r3"  data-th="院數">2</td>
+                <td class="list-r4" data-th="映期" >54</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/14</td>
+                <td class="list-r6" data-th="平均票房">1,002,575</td>
+                <td class="import list-r7" data-th="累積票房">2,005,149</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >85</td>
+                <td class="list-r1" data-th="中文片名" >一念無明</td>
+                <td class="list-r2" data-th="英文片名" >Mad World</td>
+                <td class="list-r3"  data-th="院數">7</td>
+                <td class="list-r4" data-th="映期" >38</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/31</td>
+                <td class="list-r6" data-th="平均票房">261,585</td>
+                <td class="import list-r7" data-th="累積票房">1,831,093</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >86</td>
+                <td class="list-r1" data-th="中文片名" >戀妻家宮本</td>
+                <td class="list-r2" data-th="英文片名" >A Loving Husband </td>
+                <td class="list-r3"  data-th="院數">7</td>
+                <td class="list-r4" data-th="映期" >28</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/16</td>
+                <td class="list-r6" data-th="平均票房">261,545</td>
+                <td class="import list-r7" data-th="累積票房">1,830,817</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >87</td>
+                <td class="list-r1" data-th="中文片名" >愚行錄</td>
+                <td class="list-r2" data-th="英文片名" >Gukoroku - Traces of Sin</td>
+                <td class="list-r3"  data-th="院數">6</td>
+                <td class="list-r4" data-th="映期" >37</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/09</td>
+                <td class="list-r6" data-th="平均票房">302,633</td>
+                <td class="import list-r7" data-th="累積票房">1,815,795</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >88</td>
+                <td class="list-r1" data-th="中文片名" >金爆內幕</td>
+                <td class="list-r2" data-th="英文片名" >Gold</td>
+                <td class="list-r3"  data-th="院數">10</td>
+                <td class="list-r4" data-th="映期" >42</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/24</td>
+                <td class="list-r6" data-th="平均票房">181,034</td>
+                <td class="import list-r7" data-th="累積票房">1,810,336</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >89</td>
+                <td class="list-r1" data-th="中文片名" >藍色小精靈：失落的藍藍村</td>
+                <td class="list-r2" data-th="英文片名" >Smurfs: The Lost Village</td>
+                <td class="list-r3"  data-th="院數">19</td>
+                <td class="list-r4" data-th="映期" >36</td>
+                <td class="list-r5" data-th="上映日期" >2017/03/31</td>
+                <td class="list-r6" data-th="平均票房">94,323</td>
+                <td class="import list-r7" data-th="累積票房">1,792,146</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >90</td>
+                <td class="list-r1" data-th="中文片名" >最完美的女孩</td>
+                <td class="list-r2" data-th="英文片名" >The Perfect Girl</td>
+                <td class="list-r3"  data-th="院數">12</td>
+                <td class="list-r4" data-th="映期" >21</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/28</td>
+                <td class="list-r6" data-th="平均票房">141,437</td>
+                <td class="import list-r7" data-th="累積票房">1,697,244</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >91</td>
+                <td class="list-r1" data-th="中文片名" >接線員</td>
+                <td class="list-r2" data-th="英文片名" >The Receptionist</td>
+                <td class="list-r3"  data-th="院數">6</td>
+                <td class="list-r4" data-th="映期" >22</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/23</td>
+                <td class="list-r6" data-th="平均票房">274,781</td>
+                <td class="import list-r7" data-th="累積票房">1,648,685</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >92</td>
+                <td class="list-r1" data-th="中文片名" >WE ARE X：X JAPAN 重生之路</td>
+                <td class="list-r2" data-th="英文片名" >We Are X</td>
+                <td class="list-r3"  data-th="院數">4</td>
+                <td class="list-r4" data-th="映期" >40</td>
+                <td class="list-r5" data-th="上映日期" >2017/04/21</td>
+                <td class="list-r6" data-th="平均票房">410,961</td>
+                <td class="import list-r7" data-th="累積票房">1,643,844</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >93</td>
+                <td class="list-r1" data-th="中文片名" >死小孩</td>
+                <td class="list-r2" data-th="英文片名" >Kodomo Tsukai </td>
+                <td class="list-r3"  data-th="院數">7</td>
+                <td class="list-r4" data-th="映期" >21</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/23</td>
+                <td class="list-r6" data-th="平均票房">232,578</td>
+                <td class="import list-r7" data-th="累積票房">1,628,047</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >94</td>
+                <td class="list-r1" data-th="中文片名" >危牆狙擊</td>
+                <td class="list-r2" data-th="英文片名" >The Wall</td>
+                <td class="list-r3"  data-th="院數">14</td>
+                <td class="list-r4" data-th="映期" >27</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/19</td>
+                <td class="list-r6" data-th="平均票房">116,001</td>
+                <td class="import list-r7" data-th="累積票房">1,624,007</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >95</td>
+                <td class="list-r1" data-th="中文片名" >以愛為名</td>
+                <td class="list-r2" data-th="英文片名" >Falling in Love</td>
+                <td class="list-r3"  data-th="院數">6</td>
+                <td class="list-r4" data-th="映期" >15</td>
+                <td class="list-r5" data-th="上映日期" >2017/05/19</td>
+                <td class="list-r6" data-th="平均票房">250,975</td>
+                <td class="import list-r7" data-th="累積票房">1,505,849</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >96</td>
+                <td class="list-r1" data-th="中文片名" >古都</td>
+                <td class="list-r2" data-th="英文片名" >The Old Capital</td>
+                <td class="list-r3"  data-th="院數">4</td>
+                <td class="list-r4" data-th="映期" >35</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/24</td>
+                <td class="list-r6" data-th="平均票房">366,103</td>
+                <td class="import list-r7" data-th="累積票房">1,464,410</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >97</td>
+                <td class="list-r1" data-th="中文片名" >何者</td>
+                <td class="list-r2" data-th="英文片名" >Someone</td>
+                <td class="list-r3"  data-th="院數">5</td>
+                <td class="list-r4" data-th="映期" >28</td>
+                <td class="list-r5" data-th="上映日期" >2017/01/06</td>
+                <td class="list-r6" data-th="平均票房">289,569</td>
+                <td class="import list-r7" data-th="累積票房">1,447,844</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >98</td>
+                <td class="list-r1" data-th="中文片名" >黑執事劇場版 豪華客船編</td>
+                <td class="list-r2" data-th="英文片名" >Black Butler: Book of the Atlantic </td>
+                <td class="list-r3"  data-th="院數">2</td>
+                <td class="list-r4" data-th="映期" >25</td>
+                <td class="list-r5" data-th="上映日期" >2017/02/10</td>
+                <td class="list-r6" data-th="平均票房">719,787</td>
+                <td class="import list-r7" data-th="累積票房">1,439,574</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >99</td>
+                <td class="list-r1" data-th="中文片名" >巴霍巴利王：磅礡終章</td>
+                <td class="list-r2" data-th="英文片名" >Bahubali 2: The Conclusion</td>
+                <td class="list-r3"  data-th="院數">6</td>
+                <td class="list-r4" data-th="映期" >14</td>
+                <td class="list-r5" data-th="上映日期" >2017/06/30</td>
+                <td class="list-r6" data-th="平均票房">236,771</td>
+                <td class="import list-r7" data-th="累積票房">1,420,627</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >100</td>
+                <td class="list-r1" data-th="中文片名" >奪命潘朵拉</td>
+                <td class="list-r2" data-th="英文片名" >Wish Upon</td>
+                <td class="list-r3"  data-th="院數">11</td>
+                <td class="list-r4" data-th="映期" >7</td>
+                <td class="list-r5" data-th="上映日期" >2017/07/07</td>
+                <td class="list-r6" data-th="平均票房">124,871</td>
+                <td class="import list-r7" data-th="累積票房">1,373,581</td>
+              </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+        </table>
+      </div>
+   
+    </div>
+    <!--end表格--> 
+    
+  </div>
+</div>
+<footer>Copyright © 2017 TaipeiBO All rights reserved.  </footer>
+
+<!--Back to top--> 
+<a href="" class="scrollup"><i class="fa fa-chevron-circle-up"></i></a> 
+
+<!--Javascript Plugin--> 
+
+<script src="/js/totop.js" type="text/javascript"></script> 
+<script src="/js/owl.carousel/owl.carousel.js" type="text/javascript"></script> 
+
+</body>
+</html>
