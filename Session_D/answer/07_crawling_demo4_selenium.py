@@ -1,4 +1,5 @@
 import os
+import sys
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -16,7 +17,13 @@ print('static get:', h2[0].text)
 
 # Selenium
 # 打開 Chrome 瀏覽器
-driver = webdriver.Chrome(os.path.abspath('../webdriver/chromedriver'))
+# Linux/ Windows/ MAC
+if sys.platform == 'linux':
+    driver = webdriver.Chrome(os.path.abspath('../webdriver/linux/chromedriver'))
+elif sys.platform == 'win32':
+    driver = webdriver.Chrome(os.path.abspath('../webdriver/windows/chromedriver.exe'))
+elif sys.platform == 'darwin':
+    driver = webdriver.Chrome(os.path.abspath('../webdriver/mac/chromedriver'))
 
 # 將瀏覽器視窗最大化
 driver.maximize_window()
