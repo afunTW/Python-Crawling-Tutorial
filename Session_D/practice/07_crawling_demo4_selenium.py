@@ -1,3 +1,4 @@
+import os
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -15,7 +16,7 @@ print('static get:', h2[0].text)
 
 # Selenium
 # 打開 Chrome 瀏覽器
-driver = webdriver.Chrome('../webdriver/chromedriver')
+driver = webdriver.Chrome(os.path.abspath('../webdriver/chromedriver'))
 
 # 將瀏覽器視窗最大化
 

@@ -1,3 +1,4 @@
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -6,7 +7,7 @@ from selenium.webdriver.common.by import By
 url = 'http://24h.pchome.com.tw/region/DHBE'
 
 # 打開 Chrome 瀏覽器
-driver = webdriver.Chrome('../webdriver/chromedriver')
+driver = webdriver.Chrome(os.path.abspath('../webdriver/chromedriver'))
 
 # 將瀏覽器視窗最大化
 
