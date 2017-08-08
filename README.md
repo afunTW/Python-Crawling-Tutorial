@@ -34,5 +34,5 @@ pip3 install numpy pandas matplotlib scipy scikit-learn jieba wordcloud
 ```
 
 由於大家環境都不太相同，如果安裝上有任何問題歡迎來信詢問
-- Cheng-Kun Yang:[jimmy15923@iis.sinica.edu.tw](jimmy15923@iis.sinica.edu.tw)
-- Chen-Ming Yang:[afun@iis.sinica.edu.tw](afun@iis.sinica.edu.tw)
+- Cheng-Kun Yang：[jimmy15923@iis.sinica.edu.tw](jimmy15923@iis.sinica.edu.tw)
+- Chen-Ming Yang：[afun@iis.sinica.edu.tw](afun@iis.sinica.edu.tw)
