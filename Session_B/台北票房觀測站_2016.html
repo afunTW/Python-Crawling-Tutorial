@@ -1,0 +1,1133 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TaipeiBO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='/images/tab.ico' rel='icon'/>
+<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="/css/sky-forms.css" type="text/css">
+<link rel="stylesheet" href="/js/owl.carousel/assets/owl.carousel.css">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<header>
+   <nav  class="navbar " role="navigation">
+    <div class="container">
+      <div id="n-all"> <a class="navbar-brand" href="/"><img src="/images/taipeipo_logo.png" width="230" height="50"></a>      
+         <div class="n-right-box">    
+          <a href="https://www.facebook.com/taipeibo/?fref=ts" class="fb-top" target="_blank">  <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> </a>
+        </div>
+      </div>
+     
+    </div>
+  </nav>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89920310-1', 'auto');
+  ga('send', 'pageview');
+
+</script></header>
+<div id="all-box">
+  <div class=" main-nav">
+        <ul>
+      <li> <a class="" href="/"> 單日票房</a> </li>
+      <li> <a class="" href="/weekly">單週票房</a> </li>
+      <li> <a class="" href="/yearly">年度週末冠軍</a> </li>
+      <li> <a class="sel" href="/year">年度排名</a> </li>
+      <li> <a class="" href="/schedule">電影上映檔期表</a> </li> 
+    </ul>  </div>
+  <div class="main-box">
+    <div class="top-t">
+      <form class="sky-form">
+        <div class="top-form">
+           			<label class="select">
+            <select name="" id="option">
+              <option value=""   >單日票房</option>
+              <option value="weekly"   >單週票房</option>
+              <option value="yearly"   >年度週末冠軍</option>
+              <option value="year" selected  disabled>年度排名</option>
+              <option value="schedule"   >電影上映檔期表</option>
+            </select>
+            <i></i> 
+          </label>
+
+
+	<script>
+		$(document).ready(function(){
+				$("#option" ).change(function() {
+					var date = $('#option').val();
+					location = '/'+date+'';
+					return false;
+				});
+		});
+	</script>        </div>
+        <div class="sel-info-2">
+         
+          <div class="sel-5"> 
+                       </div>
+        
+          <div class="sel-4"> 2016 年 </div>
+        
+          <div class="sel-6"> 
+                          <a href="/year/2017"> 後一年 <i class="fa fa-caret-right" aria-hidden="true"></i> 
+              </a> 
+                      </div>
+          
+          <div class="clearfix"> </div>
+        </div>
+      </form>
+    </div>
+    
+    <!--表格-->
+    
+    <div class="container">
+      <div class=" tab-box">
+        <table class="table table-striped table-bordered  text-center rwd-table" width="100%"  >
+          <tr class="tb-top">
+            <th>排名</th>
+            <th>中文片名</th>
+            <th>英文片名</th>
+            <th>院數</th>
+            <th>映期</th>
+            <th>上映日期</th>
+            <th >平均票房</th>
+            <th class="import">累積票房</th>
+
+            
+          </tr>
+                                              <tr>
+                <td class="list-r8 o-n" data-th="排名" >1</td>
+                <td class="list-r1" data-th="中文片名" >美國隊長3 : 英雄內戰</td>
+                <td class="list-r2" data-th="英文片名" >Captain America 3</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >86</td>
+                <td class="list-r5" data-th="上映日期" >2016/04/27</td>
+                <td class="list-r6" data-th="平均票房">7,652,852</td>
+                <td class="import list-r7" data-th="累積票房">183,668,450</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >2</td>
+                <td class="list-r1" data-th="中文片名" >惡棍英雄：死侍</td>
+                <td class="list-r2" data-th="英文片名" >Deadpool</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >80</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/09</td>
+                <td class="list-r6" data-th="平均票房">6,200,975</td>
+                <td class="import list-r7" data-th="累積票房">142,622,425</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >3</td>
+                <td class="list-r1" data-th="中文片名" >屍速列車</td>
+                <td class="list-r2" data-th="英文片名" >Train to Busan</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >78</td>
+                <td class="list-r5" data-th="上映日期" >2016/09/02</td>
+                <td class="list-r6" data-th="平均票房">6,047,077</td>
+                <td class="import list-r7" data-th="累積票房">133,035,683</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >4</td>
+                <td class="list-r1" data-th="中文片名" >怪獸與牠們的產地</td>
+                <td class="list-r2" data-th="英文片名" >Fantastic Beasts and Where to Find Them</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >113</td>
+                <td class="list-r5" data-th="上映日期" >2016/11/17</td>
+                <td class="list-r6" data-th="平均票房">4,942,212</td>
+                <td class="import list-r7" data-th="累積票房">118,613,078</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >5</td>
+                <td class="list-r1" data-th="中文片名" >奇異博士</td>
+                <td class="list-r2" data-th="英文片名" >Doctor Strange</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >108</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/25</td>
+                <td class="list-r6" data-th="平均票房">5,049,736</td>
+                <td class="import list-r7" data-th="累積票房">116,143,931</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >6</td>
+                <td class="list-r1" data-th="中文片名" >動物方城市</td>
+                <td class="list-r2" data-th="英文片名" >Zootopia</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >148</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/26</td>
+                <td class="list-r6" data-th="平均票房">5,431,768</td>
+                <td class="import list-r7" data-th="累積票房">114,067,119</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >7</td>
+                <td class="list-r1" data-th="中文片名" >自殺突擊隊</td>
+                <td class="list-r2" data-th="英文片名" >Suicide Squad</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >91</td>
+                <td class="list-r5" data-th="上映日期" >2016/08/04</td>
+                <td class="list-r6" data-th="平均票房">4,479,630</td>
+                <td class="import list-r7" data-th="累積票房">107,511,128</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >8</td>
+                <td class="list-r1" data-th="中文片名" >你的名字</td>
+                <td class="list-r2" data-th="英文片名" >Your Name. </td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >143</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/14</td>
+                <td class="list-r6" data-th="平均票房">4,294,335</td>
+                <td class="import list-r7" data-th="累積票房">90,181,036</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >9</td>
+                <td class="list-r1" data-th="中文片名" >蝙蝠俠對超人：正義曙光</td>
+                <td class="list-r2" data-th="英文片名" >Batman v Superman: Dawn of Justice</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >77</td>
+                <td class="list-r5" data-th="上映日期" >2016/03/25</td>
+                <td class="list-r6" data-th="平均票房">3,692,209</td>
+                <td class="import list-r7" data-th="累積票房">88,613,014</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >10</td>
+                <td class="list-r1" data-th="中文片名" >出神入化2</td>
+                <td class="list-r2" data-th="英文片名" >Now You See Me: The Second Act</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >85</td>
+                <td class="list-r5" data-th="上映日期" >2016/06/08</td>
+                <td class="list-r6" data-th="平均票房">4,348,622</td>
+                <td class="import list-r7" data-th="累積票房">86,972,449</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >11</td>
+                <td class="list-r1" data-th="中文片名" >Ｘ戰警：天啟</td>
+                <td class="list-r2" data-th="英文片名" >X-Men: Apocalypse</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >73</td>
+                <td class="list-r5" data-th="上映日期" >2016/05/17</td>
+                <td class="list-r6" data-th="平均票房">3,584,704</td>
+                <td class="import list-r7" data-th="累積票房">86,032,899</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >12</td>
+                <td class="list-r1" data-th="中文片名" >比利林恩的中場戰事</td>
+                <td class="list-r2" data-th="英文片名" >Billy Lynn's Long Halftime Walk</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >96</td>
+                <td class="list-r5" data-th="上映日期" >2016/11/11</td>
+                <td class="list-r6" data-th="平均票房">3,394,515</td>
+                <td class="import list-r7" data-th="累積票房">78,073,842</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >13</td>
+                <td class="list-r1" data-th="中文片名" >樂來越愛你</td>
+                <td class="list-r2" data-th="英文片名" >La La Land</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >142</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/09</td>
+                <td class="list-r6" data-th="平均票房">3,338,913</td>
+                <td class="import list-r7" data-th="累積票房">73,456,091</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >14</td>
+                <td class="list-r1" data-th="中文片名" >ID4星際重生</td>
+                <td class="list-r2" data-th="英文片名" >Independence Day: Resurgence</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >65</td>
+                <td class="list-r5" data-th="上映日期" >2016/06/22</td>
+                <td class="list-r6" data-th="平均票房">2,902,667</td>
+                <td class="import list-r7" data-th="累積票房">72,566,665</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >15</td>
+                <td class="list-r1" data-th="中文片名" >寵物當家</td>
+                <td class="list-r2" data-th="英文片名" >The Secret Life of Pets</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >82</td>
+                <td class="list-r5" data-th="上映日期" >2016/06/29</td>
+                <td class="list-r6" data-th="平均票房">2,608,863</td>
+                <td class="import list-r7" data-th="累積票房">62,612,720</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >16</td>
+                <td class="list-r1" data-th="中文片名" >神鬼認證：傑森包恩</td>
+                <td class="list-r2" data-th="英文片名" >Jason Bourne</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >64</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/28</td>
+                <td class="list-r6" data-th="平均票房">2,331,507</td>
+                <td class="import list-r7" data-th="累積票房">58,287,685</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >17</td>
+                <td class="list-r1" data-th="中文片名" >海底總動員2：多莉去哪兒</td>
+                <td class="list-r2" data-th="英文片名" >Finding Dory</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >109</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/01</td>
+                <td class="list-r6" data-th="平均票房">2,424,563</td>
+                <td class="import list-r7" data-th="累積票房">58,189,510</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >18</td>
+                <td class="list-r1" data-th="中文片名" >神鬼獵人</td>
+                <td class="list-r2" data-th="英文片名" >The Revenant</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >125</td>
+                <td class="list-r5" data-th="上映日期" >2016/01/08</td>
+                <td class="list-r6" data-th="平均票房">2,612,276</td>
+                <td class="import list-r7" data-th="累積票房">57,470,080</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >19</td>
+                <td class="list-r1" data-th="中文片名" >寒戰2</td>
+                <td class="list-r2" data-th="英文片名" >Cold War 2</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >77</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/08</td>
+                <td class="list-r6" data-th="平均票房">2,508,252</td>
+                <td class="import list-r7" data-th="累積票房">55,181,534</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >20</td>
+                <td class="list-r1" data-th="中文片名" >厲陰宅2</td>
+                <td class="list-r2" data-th="英文片名" >The Conjuring 2: The Enfield Poltergeist</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >77</td>
+                <td class="list-r5" data-th="上映日期" >2016/06/08</td>
+                <td class="list-r6" data-th="平均票房">2,564,865</td>
+                <td class="import list-r7" data-th="累積票房">53,862,158</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >21</td>
+                <td class="list-r1" data-th="中文片名" >魔獸：崛起</td>
+                <td class="list-r2" data-th="英文片名" >Warcraft</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >65</td>
+                <td class="list-r5" data-th="上映日期" >2016/06/08</td>
+                <td class="list-r6" data-th="平均票房">2,229,782</td>
+                <td class="import list-r7" data-th="累積票房">53,514,769</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >22</td>
+                <td class="list-r1" data-th="中文片名" >我就要你好好的</td>
+                <td class="list-r2" data-th="英文片名" >Me Before You</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >90</td>
+                <td class="list-r5" data-th="上映日期" >2016/06/17</td>
+                <td class="list-r6" data-th="平均票房">2,199,250</td>
+                <td class="import list-r7" data-th="累積票房">52,782,006</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >23</td>
+                <td class="list-r1" data-th="中文片名" >會計師</td>
+                <td class="list-r2" data-th="英文片名" >The Accountant</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >110</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/14</td>
+                <td class="list-r6" data-th="平均票房">2,152,652</td>
+                <td class="import list-r7" data-th="累積票房">51,663,640</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >24</td>
+                <td class="list-r1" data-th="中文片名" >全面攻佔2：倫敦救援</td>
+                <td class="list-r2" data-th="英文片名" >London Has Fallen</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >83</td>
+                <td class="list-r5" data-th="上映日期" >2016/03/04</td>
+                <td class="list-r6" data-th="平均票房">2,306,975</td>
+                <td class="import list-r7" data-th="累積票房">48,446,484</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >25</td>
+                <td class="list-r1" data-th="中文片名" >鋼鐵英雄</td>
+                <td class="list-r2" data-th="英文片名" >Hacksaw Ridge</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >137</td>
+                <td class="list-r5" data-th="上映日期" >2016/11/25</td>
+                <td class="list-r6" data-th="平均票房">1,973,087</td>
+                <td class="import list-r7" data-th="累積票房">45,381,011</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >26</td>
+                <td class="list-r1" data-th="中文片名" >單身啪啪啪</td>
+                <td class="list-r2" data-th="英文片名" >How to Be Single</td>
+                <td class="list-r3"  data-th="院數">17</td>
+                <td class="list-r4" data-th="映期" >73</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/08</td>
+                <td class="list-r6" data-th="平均票房">2,645,199</td>
+                <td class="import list-r7" data-th="累積票房">44,968,383</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >27</td>
+                <td class="list-r1" data-th="中文片名" >怪奇孤兒院</td>
+                <td class="list-r2" data-th="英文片名" >Miss Peregrine's Home for Peculiar Children</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >79</td>
+                <td class="list-r5" data-th="上映日期" >2016/09/27</td>
+                <td class="list-r6" data-th="平均票房">1,795,242</td>
+                <td class="import list-r7" data-th="累積票房">44,881,044</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >28</td>
+                <td class="list-r1" data-th="中文片名" >薩利機長：哈德遜奇蹟</td>
+                <td class="list-r2" data-th="英文片名" >Sully</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >80</td>
+                <td class="list-r5" data-th="上映日期" >2016/09/08</td>
+                <td class="list-r6" data-th="平均票房">1,726,373</td>
+                <td class="import list-r7" data-th="累積票房">43,159,315</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >29</td>
+                <td class="list-r1" data-th="中文片名" >樓下的房客</td>
+                <td class="list-r2" data-th="英文片名" >The Tenants Downstairs</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >92</td>
+                <td class="list-r5" data-th="上映日期" >2016/08/05</td>
+                <td class="list-r6" data-th="平均票房">2,014,663</td>
+                <td class="import list-r7" data-th="累積票房">42,307,922</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >30</td>
+                <td class="list-r1" data-th="中文片名" >神隱任務：永不回頭</td>
+                <td class="list-r2" data-th="英文片名" >Jack Reacher: Never Go Back</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >69</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/21</td>
+                <td class="list-r6" data-th="平均票房">1,754,552</td>
+                <td class="import list-r7" data-th="累積票房">42,109,247</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >31</td>
+                <td class="list-r1" data-th="中文片名" >長城</td>
+                <td class="list-r2" data-th="英文片名" >The Great Wall</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >64</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/29</td>
+                <td class="list-r6" data-th="平均票房">1,678,273</td>
+                <td class="import list-r7" data-th="累積票房">41,956,829</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >32</td>
+                <td class="list-r1" data-th="中文片名" >大尾鱸鰻2</td>
+                <td class="list-r2" data-th="英文片名" >David Loman 2</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >36</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/05</td>
+                <td class="list-r6" data-th="平均票房">1,715,968</td>
+                <td class="import list-r7" data-th="累積票房">37,751,287</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >33</td>
+                <td class="list-r1" data-th="中文片名" >地獄</td>
+                <td class="list-r2" data-th="英文片名" >Inferno</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >78</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/12</td>
+                <td class="list-r6" data-th="平均票房">1,846,623</td>
+                <td class="import list-r7" data-th="累積票房">36,932,463</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >34</td>
+                <td class="list-r1" data-th="中文片名" >星際大戰外傳：俠盜一號</td>
+                <td class="list-r2" data-th="英文片名" >Rogue One: A Star Wars Story</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >64</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/14</td>
+                <td class="list-r6" data-th="平均票房">1,534,260</td>
+                <td class="import list-r7" data-th="累積票房">36,822,231</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >35</td>
+                <td class="list-r1" data-th="中文片名" >刺客教條</td>
+                <td class="list-r2" data-th="英文片名" >Assassin’s Creed</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >64</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/28</td>
+                <td class="list-r6" data-th="平均票房">1,462,545</td>
+                <td class="import list-r7" data-th="累積票房">33,638,531</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >36</td>
+                <td class="list-r1" data-th="中文片名" >丹麥女孩</td>
+                <td class="list-r2" data-th="英文片名" >The Danish Girl</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >70</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/12</td>
+                <td class="list-r6" data-th="平均票房">1,579,029</td>
+                <td class="import list-r7" data-th="累積票房">33,159,616</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >37</td>
+                <td class="list-r1" data-th="中文片名" >與森林共舞</td>
+                <td class="list-r2" data-th="英文片名" >The Jungle Book</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >92</td>
+                <td class="list-r5" data-th="上映日期" >2016/04/15</td>
+                <td class="list-r6" data-th="平均票房">1,427,345</td>
+                <td class="import list-r7" data-th="累積票房">32,828,935</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >38</td>
+                <td class="list-r1" data-th="中文片名" >星際過客</td>
+                <td class="list-r2" data-th="英文片名" >Passengers</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >69</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/21</td>
+                <td class="list-r6" data-th="平均票房">1,265,785</td>
+                <td class="import list-r7" data-th="累積票房">30,378,838</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >39</td>
+                <td class="list-r1" data-th="中文片名" >星際爭霸戰：浩瀚無垠</td>
+                <td class="list-r2" data-th="英文片名" >Star Trek Beyond</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >57</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/21</td>
+                <td class="list-r6" data-th="平均票房">1,243,893</td>
+                <td class="import list-r7" data-th="累積票房">28,609,543</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >40</td>
+                <td class="list-r1" data-th="中文片名" >泰山傳奇</td>
+                <td class="list-r2" data-th="英文片名" >The Legend of Tarzan</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >59</td>
+                <td class="list-r5" data-th="上映日期" >2016/06/29</td>
+                <td class="list-r6" data-th="平均票房">1,294,241</td>
+                <td class="import list-r7" data-th="累積票房">28,473,307</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >41</td>
+                <td class="list-r1" data-th="中文片名" >極速秒殺2</td>
+                <td class="list-r2" data-th="英文片名" >Mechanic: Resurrection</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >64</td>
+                <td class="list-r5" data-th="上映日期" >2016/08/25</td>
+                <td class="list-r6" data-th="平均票房">1,237,470</td>
+                <td class="import list-r7" data-th="累積票房">28,461,816</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >42</td>
+                <td class="list-r1" data-th="中文片名" >分歧者3：赤誠者</td>
+                <td class="list-r2" data-th="英文片名" >The Divergent Series: Allegiant</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >70</td>
+                <td class="list-r5" data-th="上映日期" >2016/03/18</td>
+                <td class="list-r6" data-th="平均票房">1,508,462</td>
+                <td class="import list-r7" data-th="累積票房">27,152,307</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >43</td>
+                <td class="list-r1" data-th="中文片名" >狩獵者：凜冬之戰</td>
+                <td class="list-r2" data-th="英文片名" >The Huntsman Winter's War</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >56</td>
+                <td class="list-r5" data-th="上映日期" >2016/04/08</td>
+                <td class="list-r6" data-th="平均票房">1,097,737</td>
+                <td class="import list-r7" data-th="累積票房">26,345,685</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >44</td>
+                <td class="list-r1" data-th="中文片名" >歡樂好聲音</td>
+                <td class="list-r2" data-th="英文片名" >Sing</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >85</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/09</td>
+                <td class="list-r6" data-th="平均票房">1,065,744</td>
+                <td class="import list-r7" data-th="累積票房">24,512,120</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >45</td>
+                <td class="list-r1" data-th="中文片名" >新世紀福爾摩斯－地獄新娘</td>
+                <td class="list-r2" data-th="英文片名" >Sherlock The Abominable Bride</td>
+                <td class="list-r3"  data-th="院數">15</td>
+                <td class="list-r4" data-th="映期" >40</td>
+                <td class="list-r5" data-th="上映日期" >2016/01/07</td>
+                <td class="list-r6" data-th="平均票房">1,627,016</td>
+                <td class="import list-r7" data-th="累積票房">24,405,239</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >46</td>
+                <td class="list-r1" data-th="中文片名" >荷魯斯之眼：王者爭霸</td>
+                <td class="list-r2" data-th="英文片名" >Gods of Egypt</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >68</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/26</td>
+                <td class="list-r6" data-th="平均票房">1,323,753</td>
+                <td class="import list-r7" data-th="累積票房">23,827,561</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >47</td>
+                <td class="list-r1" data-th="中文片名" >忍者龜：破影而出</td>
+                <td class="list-r2" data-th="英文片名" >Teenage Mutant Ninja Turtles: Out of the Shadows</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >55</td>
+                <td class="list-r5" data-th="上映日期" >2016/06/03</td>
+                <td class="list-r6" data-th="平均票房">950,063</td>
+                <td class="import list-r7" data-th="累積票房">23,751,585</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >48</td>
+                <td class="list-r1" data-th="中文片名" >名偵探柯南：純黑的惡夢</td>
+                <td class="list-r2" data-th="英文片名" >Conan the Movie vol. 20 - The Darkest Nightmare </td>
+                <td class="list-r3"  data-th="院數">17</td>
+                <td class="list-r4" data-th="映期" >62</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/29</td>
+                <td class="list-r6" data-th="平均票房">1,332,409</td>
+                <td class="import list-r7" data-th="累積票房">22,650,956</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >49</td>
+                <td class="list-r1" data-th="中文片名" >魔鏡夢遊：時光怪客</td>
+                <td class="list-r2" data-th="英文片名" >Alice Through the Looking Glass</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >61</td>
+                <td class="list-r5" data-th="上映日期" >2016/05/27</td>
+                <td class="list-r6" data-th="平均票房">957,610</td>
+                <td class="import list-r7" data-th="累積票房">21,067,420</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >50</td>
+                <td class="list-r1" data-th="中文片名" >功夫熊貓3</td>
+                <td class="list-r2" data-th="英文片名" >Kung Fu Panda 3</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >71</td>
+                <td class="list-r5" data-th="上映日期" >2016/03/25</td>
+                <td class="list-r6" data-th="平均票房">930,219</td>
+                <td class="import list-r7" data-th="累積票房">20,464,813</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >51</td>
+                <td class="list-r1" data-th="中文片名" >六弄咖啡館</td>
+                <td class="list-r2" data-th="英文片名" >At Cafe 6</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >82</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/08</td>
+                <td class="list-r6" data-th="平均票房">923,766</td>
+                <td class="import list-r7" data-th="累積票房">20,322,849</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >52</td>
+                <td class="list-r1" data-th="中文片名" >擺渡人</td>
+                <td class="list-r2" data-th="英文片名" >See You Tomorrow</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >95</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/23</td>
+                <td class="list-r6" data-th="平均票房">925,603</td>
+                <td class="import list-r7" data-th="累積票房">19,437,667</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >53</td>
+                <td class="list-r1" data-th="中文片名" >恐龍當家</td>
+                <td class="list-r2" data-th="英文片名" >The Good Dinosaur</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >56</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/05</td>
+                <td class="list-r6" data-th="平均票房">955,988</td>
+                <td class="import list-r7" data-th="累積票房">19,119,764</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >54</td>
+                <td class="list-r1" data-th="中文片名" >最美的安排</td>
+                <td class="list-r2" data-th="英文片名" >Collateral Beauty</td>
+                <td class="list-r3"  data-th="院數">26</td>
+                <td class="list-r4" data-th="映期" >74</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/15</td>
+                <td class="list-r6" data-th="平均票房">727,758</td>
+                <td class="import list-r7" data-th="累積票房">18,921,713</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >55</td>
+                <td class="list-r1" data-th="中文片名" >阿公歐買尬</td>
+                <td class="list-r2" data-th="英文片名" >Dirty Grandpa</td>
+                <td class="list-r3"  data-th="院數">17</td>
+                <td class="list-r4" data-th="映期" >42</td>
+                <td class="list-r5" data-th="上映日期" >2016/01/22</td>
+                <td class="list-r6" data-th="平均票房">1,101,340</td>
+                <td class="import list-r7" data-th="累積票房">18,722,782</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >56</td>
+                <td class="list-r1" data-th="中文片名" >冰原歷險記：笑星撞地球</td>
+                <td class="list-r2" data-th="英文片名" >Ice Age: Collision Course</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >63</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/22</td>
+                <td class="list-r6" data-th="平均票房">803,299</td>
+                <td class="import list-r7" data-th="累積票房">18,475,875</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >57</td>
+                <td class="list-r1" data-th="中文片名" >飛躍奇蹟</td>
+                <td class="list-r2" data-th="英文片名" >Eddie the Eagle</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >81</td>
+                <td class="list-r5" data-th="上映日期" >2016/04/01</td>
+                <td class="list-r6" data-th="平均票房">865,651</td>
+                <td class="import list-r7" data-th="累積票房">18,178,669</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >58</td>
+                <td class="list-r1" data-th="中文片名" >13小時：班加西的秘密士兵</td>
+                <td class="list-r2" data-th="英文片名" >13 Hours: The Secret Soldiers of Benghazi</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >56</td>
+                <td class="list-r5" data-th="上映日期" >2016/01/29</td>
+                <td class="list-r6" data-th="平均票房">817,774</td>
+                <td class="import list-r7" data-th="累積票房">17,991,030</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >59</td>
+                <td class="list-r1" data-th="中文片名" >魔鬼剋星</td>
+                <td class="list-r2" data-th="英文片名" >Ghostbusters</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >63</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/14</td>
+                <td class="list-r6" data-th="平均票房">774,455</td>
+                <td class="import list-r7" data-th="累積票房">17,812,476</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >60</td>
+                <td class="list-r1" data-th="中文片名" >走音天后</td>
+                <td class="list-r2" data-th="英文片名" >Florence Foster Jenkins</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >87</td>
+                <td class="list-r5" data-th="上映日期" >2016/05/20</td>
+                <td class="list-r6" data-th="平均票房">836,614</td>
+                <td class="import list-r7" data-th="累積票房">17,568,891</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >61</td>
+                <td class="list-r1" data-th="中文片名" >鬼關燈</td>
+                <td class="list-r2" data-th="英文片名" >Lights Out</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >57</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/21</td>
+                <td class="list-r6" data-th="平均票房">852,267</td>
+                <td class="import list-r7" data-th="累積票房">17,045,343</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >62</td>
+                <td class="list-r1" data-th="中文片名" >怒火地平線</td>
+                <td class="list-r2" data-th="英文片名" >Deepwater Horizon</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >50</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/06</td>
+                <td class="list-r6" data-th="平均票房">779,139</td>
+                <td class="import list-r7" data-th="累積票房">16,361,911</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >63</td>
+                <td class="list-r1" data-th="中文片名" >大賣空</td>
+                <td class="list-r2" data-th="英文片名" >The Big Short</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >71</td>
+                <td class="list-r5" data-th="上映日期" >2016/01/15</td>
+                <td class="list-r6" data-th="平均票房">771,273</td>
+                <td class="import list-r7" data-th="累積票房">16,196,740</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >64</td>
+                <td class="list-r1" data-th="中文片名" >暫時停止呼吸</td>
+                <td class="list-r2" data-th="英文片名" >Don't Breathe</td>
+                <td class="list-r3"  data-th="院數">16</td>
+                <td class="list-r4" data-th="映期" >51</td>
+                <td class="list-r5" data-th="上映日期" >2016/09/27</td>
+                <td class="list-r6" data-th="平均票房">1,008,753</td>
+                <td class="import list-r7" data-th="累積票房">16,140,053</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >65</td>
+                <td class="list-r1" data-th="中文片名" >決戰異世界：嗜血之戰</td>
+                <td class="list-r2" data-th="英文片名" >Underworld: Blood Wars</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >71</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/01</td>
+                <td class="list-r6" data-th="平均票房">660,510</td>
+                <td class="import list-r7" data-th="累積票房">15,852,231</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >66</td>
+                <td class="list-r1" data-th="中文片名" >金錢怪獸</td>
+                <td class="list-r2" data-th="英文片名" >Money Monster</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >71</td>
+                <td class="list-r5" data-th="上映日期" >2016/05/13</td>
+                <td class="list-r6" data-th="平均票房">679,824</td>
+                <td class="import list-r7" data-th="累積票房">15,635,947</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >67</td>
+                <td class="list-r1" data-th="中文片名" >第五毀滅</td>
+                <td class="list-r2" data-th="英文片名" >The 5th Wave</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >29</td>
+                <td class="list-r5" data-th="上映日期" >2016/01/21</td>
+                <td class="list-r6" data-th="平均票房">697,352</td>
+                <td class="import list-r7" data-th="累積票房">15,341,747</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >68</td>
+                <td class="list-r1" data-th="中文片名" >惡鄰纏身2</td>
+                <td class="list-r2" data-th="英文片名" >Neighbors 2: Sorority Rising</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >54</td>
+                <td class="list-r5" data-th="上映日期" >2016/05/06</td>
+                <td class="list-r6" data-th="平均票房">738,386</td>
+                <td class="import list-r7" data-th="累積票房">14,767,728</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >69</td>
+                <td class="list-r1" data-th="中文片名" >吹夢巨人</td>
+                <td class="list-r2" data-th="英文片名" >The BFG</td>
+                <td class="list-r3"  data-th="院數">24</td>
+                <td class="list-r4" data-th="映期" >87</td>
+                <td class="list-r5" data-th="上映日期" >2016/08/11</td>
+                <td class="list-r6" data-th="平均票房">612,852</td>
+                <td class="import list-r7" data-th="累積票房">14,708,442</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >70</td>
+                <td class="list-r1" data-th="中文片名" >惱爸偏頭痛</td>
+                <td class="list-r2" data-th="英文片名" >Why Him?</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >55</td>
+                <td class="list-r5" data-th="上映日期" >2016/12/23</td>
+                <td class="list-r6" data-th="平均票房">799,827</td>
+                <td class="import list-r7" data-th="累積票房">14,396,884</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >71</td>
+                <td class="list-r1" data-th="中文片名" >中央情爆員</td>
+                <td class="list-r2" data-th="英文片名" >Central Intelligence</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >48</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/15</td>
+                <td class="list-r6" data-th="平均票房">678,231</td>
+                <td class="import list-r7" data-th="累積票房">13,564,628</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >72</td>
+                <td class="list-r1" data-th="中文片名" >列車上的女孩</td>
+                <td class="list-r2" data-th="英文片名" >The Girl on the Train</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >57</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/07</td>
+                <td class="list-r6" data-th="平均票房">614,080</td>
+                <td class="import list-r7" data-th="累積票房">12,895,674</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >73</td>
+                <td class="list-r1" data-th="中文片名" >危城</td>
+                <td class="list-r2" data-th="英文片名" >Call of Heroes</td>
+                <td class="list-r3"  data-th="院數">21</td>
+                <td class="list-r4" data-th="映期" >58</td>
+                <td class="list-r5" data-th="上映日期" >2016/08/19</td>
+                <td class="list-r6" data-th="平均票房">609,818</td>
+                <td class="import list-r7" data-th="累積票房">12,806,188</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >74</td>
+                <td class="list-r1" data-th="中文片名" >換腦行動</td>
+                <td class="list-r2" data-th="英文片名" >Criminal</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >67</td>
+                <td class="list-r5" data-th="上映日期" >2016/04/15</td>
+                <td class="list-r6" data-th="平均票房">683,317</td>
+                <td class="import list-r7" data-th="累積票房">12,299,708</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >75</td>
+                <td class="list-r1" data-th="中文片名" >驚爆焦點</td>
+                <td class="list-r2" data-th="英文片名" >Spotlight</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >80</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/19</td>
+                <td class="list-r6" data-th="平均票房">671,165</td>
+                <td class="import list-r7" data-th="累積票房">12,080,967</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >76</td>
+                <td class="list-r1" data-th="中文片名" >賓漢</td>
+                <td class="list-r2" data-th="英文片名" >Ben-Hur</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >55</td>
+                <td class="list-r5" data-th="上映日期" >2016/08/18</td>
+                <td class="list-r6" data-th="平均票房">476,564</td>
+                <td class="import list-r7" data-th="累積票房">11,914,099</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >77</td>
+                <td class="list-r1" data-th="中文片名" >科洛弗10號地窖</td>
+                <td class="list-r2" data-th="英文片名" >10 Cloverfield Lane</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >49</td>
+                <td class="list-r5" data-th="上映日期" >2016/04/01</td>
+                <td class="list-r6" data-th="平均票房">592,927</td>
+                <td class="import list-r7" data-th="累積票房">11,858,536</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >78</td>
+                <td class="list-r1" data-th="中文片名" >絕命救援</td>
+                <td class="list-r2" data-th="英文片名" >The Finest Hours</td>
+                <td class="list-r3"  data-th="院數">22</td>
+                <td class="list-r4" data-th="映期" >56</td>
+                <td class="list-r5" data-th="上映日期" >2016/03/11</td>
+                <td class="list-r6" data-th="平均票房">538,827</td>
+                <td class="import list-r7" data-th="累積票房">11,854,186</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >79</td>
+                <td class="list-r1" data-th="中文片名" >神鬼駭客：史諾登</td>
+                <td class="list-r2" data-th="英文片名" >Snowden</td>
+                <td class="list-r3"  data-th="院數">20</td>
+                <td class="list-r4" data-th="映期" >53</td>
+                <td class="list-r5" data-th="上映日期" >2016/09/23</td>
+                <td class="list-r6" data-th="平均票房">576,797</td>
+                <td class="import list-r7" data-th="累積票房">11,535,937</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >80</td>
+                <td class="list-r1" data-th="中文片名" > 送子鳥</td>
+                <td class="list-r2" data-th="英文片名" >Storks</td>
+                <td class="list-r3"  data-th="院數">19</td>
+                <td class="list-r4" data-th="映期" >62</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/07</td>
+                <td class="list-r6" data-th="平均票房">603,747</td>
+                <td class="import list-r7" data-th="累積票房">11,471,196</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >81</td>
+                <td class="list-r1" data-th="中文片名" >BJ有喜</td>
+                <td class="list-r2" data-th="英文片名" >Bridget Jones's Baby</td>
+                <td class="list-r3"  data-th="院數">23</td>
+                <td class="list-r4" data-th="映期" >58</td>
+                <td class="list-r5" data-th="上映日期" >2016/09/14</td>
+                <td class="list-r6" data-th="平均票房">465,065</td>
+                <td class="import list-r7" data-th="累積票房">10,696,494</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >82</td>
+                <td class="list-r1" data-th="中文片名" >憤怒鳥玩電影</td>
+                <td class="list-r2" data-th="英文片名" >Angry Birds</td>
+                <td class="list-r3"  data-th="院數">19</td>
+                <td class="list-r4" data-th="映期" >37</td>
+                <td class="list-r5" data-th="上映日期" >2016/06/08</td>
+                <td class="list-r6" data-th="平均票房">552,416</td>
+                <td class="import list-r7" data-th="累積票房">10,495,900</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >83</td>
+                <td class="list-r1" data-th="中文片名" >不存在的房間</td>
+                <td class="list-r2" data-th="英文片名" >Room</td>
+                <td class="list-r3"  data-th="院數">11</td>
+                <td class="list-r4" data-th="映期" >100</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/26</td>
+                <td class="list-r6" data-th="平均票房">875,017</td>
+                <td class="import list-r7" data-th="累積票房">9,625,186</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >84</td>
+                <td class="list-r1" data-th="中文片名" >玩命直播</td>
+                <td class="list-r2" data-th="英文片名" >Nerve</td>
+                <td class="list-r3"  data-th="院數">16</td>
+                <td class="list-r4" data-th="映期" >56</td>
+                <td class="list-r5" data-th="上映日期" >2016/09/09</td>
+                <td class="list-r6" data-th="平均票房">584,523</td>
+                <td class="import list-r7" data-th="累積票房">9,352,361</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >85</td>
+                <td class="list-r1" data-th="中文片名" >我的蛋男情人</td>
+                <td class="list-r2" data-th="英文片名" >My Egg Boy</td>
+                <td class="list-r3"  data-th="院數">25</td>
+                <td class="list-r4" data-th="映期" >47</td>
+                <td class="list-r5" data-th="上映日期" >2016/09/23</td>
+                <td class="list-r6" data-th="平均票房">351,676</td>
+                <td class="import list-r7" data-th="累積票房">8,791,905</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >86</td>
+                <td class="list-r1" data-th="中文片名" >國定殺戮日：大選之年</td>
+                <td class="list-r2" data-th="英文片名" >The Purge: Election Year</td>
+                <td class="list-r3"  data-th="院數">15</td>
+                <td class="list-r4" data-th="映期" >41</td>
+                <td class="list-r5" data-th="上映日期" >2016/07/08</td>
+                <td class="list-r6" data-th="平均票房">558,886</td>
+                <td class="import list-r7" data-th="累積票房">8,383,284</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >87</td>
+                <td class="list-r1" data-th="中文片名" >絕鯊島</td>
+                <td class="list-r2" data-th="英文片名" >The Shallows</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >48</td>
+                <td class="list-r5" data-th="上映日期" >2016/08/18</td>
+                <td class="list-r6" data-th="平均票房">454,661</td>
+                <td class="import list-r7" data-th="累積票房">8,183,901</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >88</td>
+                <td class="list-r1" data-th="中文片名" >電影版妖怪手錶：誕生的秘密喵！</td>
+                <td class="list-r2" data-th="英文片名" >Yo-Kai Watch the Movie: The Secret is Created, Nya</td>
+                <td class="list-r3"  data-th="院數">15</td>
+                <td class="list-r4" data-th="映期" >48</td>
+                <td class="list-r5" data-th="上映日期" >2016/01/29</td>
+                <td class="list-r6" data-th="平均票房">513,059</td>
+                <td class="import list-r7" data-th="累積票房">7,695,886</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >89</td>
+                <td class="list-r1" data-th="中文片名" >人生按個讚</td>
+                <td class="list-r2" data-th="英文片名" >Like Life</td>
+                <td class="list-r3"  data-th="院數">16</td>
+                <td class="list-r4" data-th="映期" >37</td>
+                <td class="list-r5" data-th="上映日期" >2016/02/05</td>
+                <td class="list-r6" data-th="平均票房">460,345</td>
+                <td class="import list-r7" data-th="累積票房">7,365,517</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >90</td>
+                <td class="list-r1" data-th="中文片名" >特工爺爺</td>
+                <td class="list-r2" data-th="英文片名" >The Bodyguard</td>
+                <td class="list-r3"  data-th="院數">16</td>
+                <td class="list-r4" data-th="映期" >26</td>
+                <td class="list-r5" data-th="上映日期" >2016/04/01</td>
+                <td class="list-r6" data-th="平均票房">439,492</td>
+                <td class="import list-r7" data-th="累積票房">7,031,873</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >91</td>
+                <td class="list-r1" data-th="中文片名" >北京遇上西雅圖之不2情書</td>
+                <td class="list-r2" data-th="英文片名" >Finding Mr. Right 2</td>
+                <td class="list-r3"  data-th="院數">13</td>
+                <td class="list-r4" data-th="映期" >62</td>
+                <td class="list-r5" data-th="上映日期" >2016/05/13</td>
+                <td class="list-r6" data-th="平均票房">536,389</td>
+                <td class="import list-r7" data-th="累積票房">6,973,060</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >92</td>
+                <td class="list-r1" data-th="中文片名" >航海王劇場版：Gold</td>
+                <td class="list-r2" data-th="英文片名" >ONE PIECE FILM GOLD</td>
+                <td class="list-r3"  data-th="院數">16</td>
+                <td class="list-r4" data-th="映期" >28</td>
+                <td class="list-r5" data-th="上映日期" >2016/08/19</td>
+                <td class="list-r6" data-th="平均票房">433,060</td>
+                <td class="import list-r7" data-th="累積票房">6,928,967</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >93</td>
+                <td class="list-r1" data-th="中文片名" >非死不可</td>
+                <td class="list-r2" data-th="英文片名" >Friend Request</td>
+                <td class="list-r3"  data-th="院數">12</td>
+                <td class="list-r4" data-th="映期" >70</td>
+                <td class="list-r5" data-th="上映日期" >2016/04/22</td>
+                <td class="list-r6" data-th="平均票房">569,627</td>
+                <td class="import list-r7" data-th="累積票房">6,835,526</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >94</td>
+                <td class="list-r1" data-th="中文片名" >碟仙：惡靈始源</td>
+                <td class="list-r2" data-th="英文片名" >Ouija: Origin of Evil</td>
+                <td class="list-r3"  data-th="院數">14</td>
+                <td class="list-r4" data-th="映期" >41</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/21</td>
+                <td class="list-r6" data-th="平均票房">480,289</td>
+                <td class="import list-r7" data-th="累積票房">6,724,050</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >95</td>
+                <td class="list-r1" data-th="中文片名" >單身動物園</td>
+                <td class="list-r2" data-th="英文片名" >The Lobster</td>
+                <td class="list-r3"  data-th="院數">8</td>
+                <td class="list-r4" data-th="映期" >52</td>
+                <td class="list-r5" data-th="上映日期" >2016/03/11</td>
+                <td class="list-r6" data-th="平均票房">830,879</td>
+                <td class="import list-r7" data-th="累積票房">6,647,029</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >96</td>
+                <td class="list-r1" data-th="中文片名" >少女與戰車劇場版</td>
+                <td class="list-r2" data-th="英文片名" >Girls und Panzer the Movie </td>
+                <td class="list-r3"  data-th="院數">2</td>
+                <td class="list-r4" data-th="映期" >91</td>
+                <td class="list-r5" data-th="上映日期" >2016/05/13</td>
+                <td class="list-r6" data-th="平均票房">3,283,686</td>
+                <td class="import list-r7" data-th="累積票房">6,567,371</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >97</td>
+                <td class="list-r1" data-th="中文片名" >絕地7騎士</td>
+                <td class="list-r2" data-th="英文片名" >The Magnificent Seven</td>
+                <td class="list-r3"  data-th="院數">18</td>
+                <td class="list-r4" data-th="映期" >42</td>
+                <td class="list-r5" data-th="上映日期" >2016/10/07</td>
+                <td class="list-r6" data-th="平均票房">356,379</td>
+                <td class="import list-r7" data-th="累積票房">6,414,817</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >98</td>
+                <td class="list-r1" data-th="中文片名" >託陰</td>
+                <td class="list-r2" data-th="英文片名" >The Boy</td>
+                <td class="list-r3"  data-th="院數">14</td>
+                <td class="list-r4" data-th="映期" >47</td>
+                <td class="list-r5" data-th="上映日期" >2016/03/11</td>
+                <td class="list-r6" data-th="平均票房">432,236</td>
+                <td class="import list-r7" data-th="累積票房">6,051,302</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >99</td>
+                <td class="list-r1" data-th="中文片名" >如果這世界貓消失了</td>
+                <td class="list-r2" data-th="英文片名" >If Cats Disappeared from the World </td>
+                <td class="list-r3"  data-th="院數">11</td>
+                <td class="list-r4" data-th="映期" >39</td>
+                <td class="list-r5" data-th="上映日期" >2016/08/19</td>
+                <td class="list-r6" data-th="平均票房">527,208</td>
+                <td class="import list-r7" data-th="累積票房">5,799,292</td>
+              </tr>
+                                                <tr>
+                <td class="list-r8 o-n" data-th="排名" >100</td>
+                <td class="list-r1" data-th="中文片名" >因為愛你</td>
+                <td class="list-r2" data-th="英文片名" >Carol</td>
+                <td class="list-r3"  data-th="院數">14</td>
+                <td class="list-r4" data-th="映期" >57</td>
+                <td class="list-r5" data-th="上映日期" >2016/03/04</td>
+                <td class="list-r6" data-th="平均票房">400,177</td>
+                <td class="import list-r7" data-th="累積票房">5,602,476</td>
+              </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+        </table>
+      </div>
+   
+    </div>
+    <!--end表格--> 
+    
+  </div>
+</div>
+<footer>Copyright © 2017 TaipeiBO All rights reserved.  </footer>
+
+<!--Back to top--> 
+<a href="" class="scrollup"><i class="fa fa-chevron-circle-up"></i></a> 
+
+<!--Javascript Plugin--> 
+
+<script src="/js/totop.js" type="text/javascript"></script> 
+<script src="/js/owl.carousel/owl.carousel.js" type="text/javascript"></script> 
+
+</body>
+</html>
