@@ -7,14 +7,14 @@
 ## 課前準備: 強烈建議安裝 Anaconda
 - 建議下載 Python 3.6 版本 https://www.continuum.io/downloads
 - 本課程會使用到瀏覽器 Chrome，麻煩各位選擇自己電腦的平台安裝 Chrome https://www.google.com.tw/chrome/browser/desktop/index.html
-- 本課程的 Session A & B 會使用到 jupyter notebook 進行，會提供 .ipynb 檔案，在安裝完 Anaconda 後即可用內建 jupyter notebook 打開 .ipynb 檔
+- 本課程的 Session A & B 會使用到 jupyter notebook 進行，會提供 .ipynb 檔案，在安裝完 Anaconda 後即可用內建 jupyter notebook 打開 .ipynb 檔，詳細教學可以參考 jupyter_notebook教學.pdf
 - 本課程會用到的套件較多，建議安裝 Anaconda，如有安裝 Anaconda 只需安裝以下套件
 
 ```
 pip install selenium tldextract Pillow
 ```
 
-**optional** <small>- for 資料分析，沒有練習題，可自行選擇是否安裝</small>
+**optional** <small>- for 資料分析，沒有練習題但會有範例，可自行選擇是否安裝</small>
 ```
 pip install jieba wordcloud
 ```
@@ -27,7 +27,7 @@ pip install jieba wordcloud
 pip3 install requests beautifulsoup4 lxml Pillow selenium tldextract
 ```
 
-**optional** <small>- for 資料分析，沒有練習題，可自行選擇是否安裝</small>
+**optional** <small>- for 資料分析，沒有練習題但會有範例，可自行選擇是否安裝</small>
 
 ```
 pip3 install numpy pandas matplotlib scipy scikit-learn jieba wordcloud 
