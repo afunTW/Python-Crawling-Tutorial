@@ -3,6 +3,7 @@
 
 # In[1]:
 
+# Session A 用到的套件，如果有 import error，請打開 Anaconda Prompt 並參考 https://github.com/afunTW/dsc-crawling 的教學安裝套件
 from bs4 import BeautifulSoup
 import requests
 import re
@@ -70,7 +71,7 @@ new_example_list = [num + 1 for num in example_list] #　把加過 1 的新 list
 # import 套件
 
 
-# 用 requests 抓取網頁並存在 response
+# 用 requests 抓取網頁 https://jimmy15923.github.io/example_page 並存在 response
 
 
 # 用 BS4 解析 HTML 並把結果回傳 soup (lxml 是 BeautifulSoup 的解析器，預設是使用 html.parser，但是 lxml 的速度及性能較佳)
@@ -176,7 +177,7 @@ print(soup.find("h1").text)
 
 # ## 練習 01: 基本的 BeautifulSoup 使用 (8 mins)
 
-# 請觀察範例網頁後，嘗試回答以下的問題
+# 請觀察[範例網頁](https://jimmy15923.github.io/example_page)後，嘗試回答以下的問題
 # 
 # 
 #     
@@ -190,11 +191,11 @@ print(soup.find("h1").text)
 # In[20]:
 
 # 範例網頁: "https://jimmy15923.github.io/example_page"
-# 1. 發送 requests.get，並將結果存在 response (或自己定義喜歡變數也可以)
+# 1. 發送 requests.get，並將結果存在 response (或自己定義喜歡的變數也可以)
 # your codes
 response = 
 
-# 2. 將 response 的 HTML 文字放進 BeautifulSoup，並將結果存在 soup (或自己定義喜歡變數也可以)
+# 2. 將 response 的 HTML 文字放進 BeautifulSoup，並將結果存在 soup (或自己定義喜歡的變數也可以)
 # your codes
 soup = 
 
@@ -209,14 +210,14 @@ soup =
 # your codes
 
 
-# Q2. 請找出標籤 div，屬性 id = "id1" 的文字內容?
+# Q2. 請找出**標籤 div，屬性 id = "id1"** 的文字內容?
 
 # In[22]:
 
 # your codes
 
 
-# Q3. 請找出 列3欄3 背後的超連結網址? (請使用 BeautifulSoup + 右鍵→檢查 來找，不要偷偷從網頁點開來看連結喔^^)
+# Q3. 請找出**列3欄3**背後的超連結網址? (請使用 BeautifulSoup + 右鍵→檢查 來找到那個標籤，不要偷偷從網頁點開連結來看喔^^)
 
 # In[23]:
 
@@ -243,7 +244,7 @@ soup =
 # regular expression 的符號意義
 # ![BS4](data/reg.png)
 
-# ### 以下的練習您可以使用 Python 內建的 re 套件，也可以使用這個[線上regular expression 測試器](https://regex101.com/)，可以看到比較互動式的結果，使用方法只要把 test_string 裡的內容複製到網頁下方的 TEST STRING 空格，然後在網頁上方的空格輸入您的  regular expression，就可以看到匹配的結果，左邊的 FLAVOR 記得選擇 python
+# ### 以下的練習您可以使用 python 內建的 re 套件，也可以使用這個[線上regular expression 測試器](https://regex101.com/)，可以看到比較互動式的結果，使用方法只要把 test_string 裡的內容複製到網頁下方的 TEST STRING 空格，然後在網頁上方的空格輸入您的  regular expression，就可以看到匹配的結果，左邊的 FLAVOR 記得選擇 python
 
 # ### 範例 02-1:  *, +, {} 的用法
 # \* 代表前面的字元可出現零次以上，而 + 則是代表前面的字元至少要出現一次以上，{m,n} 則是代表前面的字元可出現 m 次 ~ n 次
@@ -256,7 +257,7 @@ re.findall(pattern, test_string)
 
 
 # ### 練習 02-1: *, +, {} 的用法
-# 找出 abbbbc, bc，但不包含 c, acc
+# 在 test_string 中找出 abbbbc, bc，但不包含 c, acc
 # 
 # Hint: 思考一下要尋找的文字跟要濾除的文字，在字母之間有甚麼差異，先把 find 寫出來，再想辦法去掉要 skip 
 
@@ -322,7 +323,7 @@ re.findall(pattern, test_string)
 # ### 範例 02-4: 跳脫符號
 # 當想要搜尋的字元，在 regular expression 已經是保留字的時候，就要使用跳脫符號
 # 
-# 例如你想要搜尋符合 "+" (點)的文字，但是 "+" 在 regular expression 是代表出現一次以上的意思
+# 例如你想要搜尋符合 "+" (加號) 這個文字，但是 "+" 在 regular expression 是代表出現一次以上的意思
 # 
 # 這時在 "+" 前面加上 "\" (跳脫符號)，這樣做的話 regular expression 就會知道你是要尋找 "+" 
 
