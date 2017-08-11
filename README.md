@@ -14,7 +14,7 @@
 pip install selenium tldextract Pillow
 ```
 
-**optional** <small>- for 資料分析，沒有練習題但會有範例 code 可以執行，可自行選擇是否安裝</small>
+**optional** <small>- for 資料分析，沒有練習題但會有範例 code 可以執行，可自行選擇是否安裝 (如果安裝 wordcloud 時有問題，可能是沒有下載 visual studio，可以從 warining 中提供的網址下載安裝)</small>
 ```
 pip install jieba wordcloud
 ```
