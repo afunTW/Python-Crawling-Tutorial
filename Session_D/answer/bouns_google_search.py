@@ -1,3 +1,6 @@
+import os
+import sys
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -7,8 +10,15 @@ from pprint import pprint
 # google 首頁
 url = 'https://google.com'
 
+# Selenium
 # 打開 Chrome 瀏覽器
-driver = webdriver.Chrome('../webdriver/chromedriver')
+# Linux/ Windows/ MAC
+if sys.platform == 'linux':
+    driver = webdriver.Chrome(os.path.abspath('../webdriver/linux/chromedriver'))
+elif sys.platform == 'win32':
+    driver = webdriver.Chrome(os.path.abspath('../webdriver/windows/chromedriver.exe'))
+elif sys.platform == 'darwin':
+    driver = webdriver.Chrome(os.path.abspath('../webdriver/mac/chromedriver'))
 
 # 瀏覽器視窗最大化
 driver.maximize_window()
