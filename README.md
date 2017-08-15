@@ -30,9 +30,21 @@ pip3 install requests beautifulsoup4 lxml Pillow selenium tldextract
 **optional** <small>- for 資料分析，沒有練習題但會有範例 code 可以執行，可自行選擇是否安裝</small>
 
 ```
-pip3 install numpy pandas matplotlib scipy scikit-learn jieba wordcloud 
+pip3 install numpy pandas matplotlib scipy scikit-learn jieba wordcloud
 ```
 
 由於大家環境都不太相同，如果安裝上有任何問題歡迎來信詢問
 - 楊証琨 Cheng-Kun Yang：[jimmy15923@iis.sinica.edu.tw](jimmy15923@iis.sinica.edu.tw)
 - 楊鎮銘 Chen-Ming Yang：[afun@iis.sinica.edu.tw](afun@iis.sinica.edu.tw)
+
+## Q&A
+
+**Q: 有哪些常用的 API**
+
+課堂中有說到，爬蟲只是一種得到資料的手段，如果對方有提供 API 就可以直接使用 API，
+API 通常對方都會幫你整理好資料格式，或是根據權限決定你可以獲取的資料內容
+- [Facebook Graph API](https://developers.facebook.com/tools/explorer/)
+- [Youtube](https://www.youtube.com/yt/dev/zh-TW/api-resources.html)
+- [Yahoo YQL](https://developer.yahoo.com/yql/)
+- [Instagram](https://www.instagram.com/developer/)
+- [KKTIX](http://support.kktix.com/knowledgebase/articles/558918-%E6%B4%BB%E5%8B%95%E8%B3%87%E8%A8%8A-api)
