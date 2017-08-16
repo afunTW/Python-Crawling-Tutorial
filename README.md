@@ -48,3 +48,5 @@ API 通常對方都會幫你整理好資料格式，或是根據權限決定你�
 - [Yahoo YQL](https://developer.yahoo.com/yql/)
 - [Instagram](https://www.instagram.com/developer/)
 - [KKTIX](http://support.kktix.com/knowledgebase/articles/558918-%E6%B4%BB%E5%8B%95%E8%B3%87%E8%A8%8A-api)
+- [Google Maps API](https://developers.google.com/maps/?hl=zh-tw)
+- [Taipei Open Data API](http://data.taipei/opendata/developer)
