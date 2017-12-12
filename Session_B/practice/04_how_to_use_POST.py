@@ -5,7 +5,7 @@
 # 
 # 請打開[高鐵時刻表](https://www.thsrc.com.tw/tw/TimeTable/SearchResult)的網頁，並按照簡報上介紹的方法，觀察 requests 的方式
 
-# In[4]:
+# In[1]:
 
 import requests
 from bs4 import BeautifulSoup
@@ -17,19 +17,19 @@ print(response.encoding)
 soup = BeautifulSoup(response.text, "lxml")
 
 
-# In[5]:
+# In[2]:
 
 # 觀察 option 裡面的 value
 soup.find_all("option", {"value":re.compile("[a-z0-9]{8}-[a-z0-9]{4}")})
 
 
-# In[6]:
+# In[3]:
 
 # 在還沒給任何 form_data 之前，我們是看不到搜尋後的結果的
 print(soup.find("section", class_ = "result_table"))
 
 
-# In[7]:
+# In[4]:
 
 # 將 form_data 透過 post 的方式進行 requests
 form_data = {"StartStation":"2f940836-cedc-41ef-8e28-c2336ac8fe68",
@@ -42,7 +42,7 @@ response_post = requests.post("https://www.thsrc.com.tw/tw/TimeTable/SearchResul
 soup_post = BeautifulSoup(response_post.text, "lxml")
 
 
-# In[8]:
+# In[5]:
 
 # 用同樣的搜尋條件，可以看到搜尋後的結果
 soup_post.find("section", class_ = "result_table").find("tr")

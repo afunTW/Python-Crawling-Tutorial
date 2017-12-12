@@ -122,7 +122,8 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 
-response = requests.get("http://yp.518.com.tw/service-life.html?ctf=10")
+## 518 網頁伺服器無法容納多人同時 requests，請大家使用以下的網頁作 requests，其 html 的內容是一模一樣的
+response = requests.get("https://jimmy15923.github.io/518")
 soup = BeautifulSoup(response.text, "lxml")
 
 name_phone = [tag.text for tag in soup.find_all("li", class_="comp_tel")]

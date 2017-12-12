@@ -119,4 +119,6 @@ highspeed_df.to_csv("csv_results/demo6_highspeed_schedule_utf8.csv", index = Fal
 # In[11]:
 
 # your codes
+## 518 網頁伺服器無法容納多人同時 requests，請大家使用以下的網頁作 requests，其 html 的內容是一模一樣的
+response = requests.get("https://jimmy15923.github.io/518")
 
