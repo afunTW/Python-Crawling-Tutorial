@@ -62,7 +62,7 @@ for i, row in enumerate(all_rows[1:]): # 從第二個 row 開始 iterate (因為
 movie_df.head() # 大功告成! 就只剩把 DataFrame 存起來就好，那接下來就請聰明的各位來練習一下囉!
 
 
-# In[10]:
+# In[8]:
 
 movie_df.to_csv("csv_results/movie_df.csv", index = False, encoding="utf-8") # 把 DataFrame 存起來，那接下來就請聰明的各位來練習一下囉!
 
@@ -77,6 +77,13 @@ movie_df.to_csv("csv_results/movie_df.csv", index = False, encoding="utf-8") # �
 # In[8]:
 
 # your codes
+
+
+
+
+
+
+
 
 
 
@@ -105,6 +112,12 @@ movie_df.to_csv("csv_results/movie_df.csv", index = False, encoding="utf-8") # �
 
 
 
+
+
+
+
+
+
 # -----
 以下 codes 僅供參考，會將所有票房排行榜 200 部電影的 yahoo 電影評論全部抓下來，並存成 CSV (請不要在今天執行，以免影響網路速度與 yahoo 電影流量)
 
@@ -113,6 +126,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import json
 
+# 把所有 yahoo 電影的 id 讀進來
 with open("data/all_movie_id.json", 'r', encoding="utf-8") as f:
     movie_id = json.load(f)
     
@@ -120,28 +134,29 @@ movie_name_list = pd.read_csv("data/movies_box_office.csv")["中文片名"]
 success = []
 all_df = []
 for i, x in enumerate(movie_name_list):
-    print("開始爬取 ",i, " :" , x)
+    print("開始爬取 ", i+1, " :" , x)
     id = movie_id[x]
     response = requests.get("https://tw.movies.yahoo.com/movieinfo_review.html/id=" + str(id))
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(response.text, "lmxl")
     if soup.find("div", {"class":"page_numbox"}) != None:
         page = int(soup.find("div", {"class":"page_numbox"}).find_all("a")[-2].text)
         
         comment_all = []
         star_all = []
         comment_df = pd.DataFrame(columns =  ["movie", "comments", "star"])
-
+        
+        movie_name = soup.find("div", {"class":"inform_title"}).text
+        
         for i in range(1, page):
-            response = requests.get("https://tw.movies.yahoo.com/movieinfo_review.html/id=" + id + "?sort=create_ts&order=desc&page=" + str(i) )
-            soup = BeautifulSoup(response.text, "html.parser")
+            response = requests.get("https://tw.movies.yahoo.com/movieinfo_review.html/id=" + id + "?sort=update_ts&order=desc&page=" + str(i) )
+            soup = BeautifulSoup(response.text, "lxml")
 
-            comment = [x.find("span").text for x in soup.find_all("div", {"class":"usercom_inner _c"})]
+            comment = [x.find("span", {"class":None}).text for x in soup.find_all("div", {"class":"usercom_inner _c"})]
             comment_all.extend(comment)
 
             star = [comment.find("input", {"name":"score"})['value'] for comment in soup.find_all("div", {"class":"usercom_inner _c"})]
             star_all.extend(star)
 
-        movie_name = soup.find("div", {"class":"inform_title"}).text
         comment_df = pd.DataFrame({"comments":comment_all,
                                    "movie":movie_name,
                                   "star":star_all})
@@ -152,7 +167,7 @@ for i, x in enumerate(movie_name_list):
         star_all = []
         comment_df = pd.DataFrame(columns =  ["movie", "comments", "star"])
         
-        comment = [x.find("span").text for x in soup.find_all("div", {"class":"usercom_inner _c"})]
+        comment = [x.find("span", {"class":None}).text for x in soup.find_all("div", {"class":"usercom_inner _c"})]
         comment_all.extend(comment)
 
         star = [comment.find("input", {"name":"score"})['value'] for comment in soup.find_all("div", {"class":"usercom_inner _c"})]

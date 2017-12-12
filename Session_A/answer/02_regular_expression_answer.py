@@ -25,7 +25,9 @@
 # ### 範例 02-1:  *, +, {} 的用法
 # \* 代表前面的字元可出現零次以上，而 + 則是代表前面的字元至少要出現一次以上，{m,n} 則是代表前面的字元可出現 m 次 ~ n 次
 
-# In[24]:
+# In[1]:
+
+import re
 
 pattern = "a+b*c"
 test_string = 'find aabc, ac, skip abb, dd'
@@ -37,7 +39,9 @@ re.findall(pattern, test_string)
 # 
 # Hint: 思考一下要尋找的文字跟要濾除的文字，在字母之間有甚麼差異，先把 find 寫出來，再想辦法去掉要 skip 
 
-# In[20]:
+# In[2]:
+
+import re
 
 ### your codes
 pattern = "a*b+c"
@@ -48,7 +52,9 @@ re.findall(pattern, test_string)
 # ### 範例 02-2: 找到英數字
 # 中括號代表的意思是「這個字元可以是括號內的任何一個」，以數字為例，[0-9]代表這個字元可以是 0~9 之間的任意數字，如果是 [a-z] 則代表是小寫字母 a~z 之間的任意文字，聰明的你，應該可以猜出 [A-Z] 代表的是甚麼意思吧?
 
-# In[26]:
+# In[3]:
+
+import re
 
 pattern = "[0-9]+"
 test_string = '12 drummers drumming, 11 pipers piping, 10 lords a-leaping'
@@ -58,7 +64,9 @@ re.findall(pattern, test_string)
 # ### 練習 02-2: 找到英數字
 # 在 test_string 中找出所有數字
 
-# In[21]:
+# In[4]:
+
+import re
 
 # your codes
 pattern = "[1-3]+"
@@ -69,14 +77,18 @@ re.findall(pattern, test_string)
 # ### 範例 02-3: 找到文字
 # 當有指定的文字需要搜尋，可透過 [ ] 搭配 *, + ,{} 進行搜尋
 
-# In[28]:
+# In[5]:
+
+import re
 
 pattern = "[cmf]an"
 test_string = 'find: can, man, fan, skip: dan, ran, pan'
 re.findall(pattern, test_string)
 
 
-# In[29]:
+# In[6]:
+
+import re
 
 pattern = "jim{2,5}y"
 test_string = 'find: jimmy, jimmmy, jimmmmmy, skip: jimy'
@@ -88,7 +100,9 @@ re.findall(pattern, test_string)
 # 
 # Hint: 如果只找到一個大寫字母，想想甚麼符號代表可出現一次以上?
 
-# In[22]:
+# In[7]:
+
+import re
 
 # your codes
 pattern = "[A-Z]+[a-z]"
@@ -103,7 +117,9 @@ re.findall(pattern, test_string)
 # 
 # 這時在 "+" 前面加上 "\" (跳脫符號)，這樣做的話 regular expression 就會知道你是要尋找 "+" 
 
-# In[31]:
+# In[8]:
+
+import re
 
 pattern = ".{3}\."
 test_string = 'find: 591., dot., yes., skip: non!'
@@ -113,7 +129,9 @@ re.findall(pattern, test_string)
 # ### 練習 02-4: 跳脫符號
 # 在 test_string 中找到 A+c, B+d, C+x
 
-# In[23]:
+# In[9]:
+
+import re
 
 # your codes
 pattern = "[A-Z]\+[a-z]"
@@ -124,7 +142,9 @@ re.findall(pattern, test_string)
 # ### 範例 02-5: 條件式搜尋
 # 當希望不同的搜尋條件都能夠符合時，可以使用「|」這個符號，代表左右邊只要任一一個條件符合，就會回傳
 
-# In[33]:
+# In[10]:
+
+import re
 
 pattern = "I love cats|I love dogs"
 test_string = 'find: I love cats, I love dogs, skip: I love logs, I love cogs'
@@ -134,7 +154,9 @@ re.findall(pattern, test_string)
 # ### 練習 02-5: 條件式搜尋
 # 在 test_string 中找到 jimy, jimmmy, 但不包含 jimmy, jimmmmy
 
-# In[24]:
+# In[11]:
+
+import re
 
 # your codes
 pattern = "jimy|jim{3}y"
@@ -144,7 +166,9 @@ re.findall(pattern, test_string)
 
 # ###  範例 02-6: Email 搜尋
 
-# In[35]:
+# In[12]:
+
+import re
 
 email_text = """
 Big Data Analytics/ Deep LearningSocial Computing / Computational Social Science / Crowdsourcing
@@ -159,7 +183,9 @@ Data Analysisjimmy1592302-2788379 jimmy15923@iis.sinica.com.tw#1688Data Analysis
 """
 
 
-# In[36]:
+# In[13]:
+
+import re
 
 re.findall("([A-Za-z0-9._]+@[A-Za-z.]+(com|edu)\.tw)", email_text)
 
@@ -174,33 +200,35 @@ re.findall("([A-Za-z0-9._]+@[A-Za-z.]+(com|edu)\.tw)", email_text)
 # * text = " ".join(text_list)，這段 code 可以將 list of string 全部變為一個字串
 # * 變成字串後就可以用剛剛學的 re.findall() 找出我們要的目標囉!
 
-# In[37]:
+# In[14]:
 
 # 如果忘記怎麼寫 requests 或 BeautifulSoup，可以參考
 
-# response = requests.get("http://yp.518.com.tw/service-life.html?ctf=10")
+# response = requests.get("https://jimmy15923.github.io/518")
 # print(response.encoding)
 
 # soup = BeautifulSoup(response.text, "lxml")
 
 
-# In[2]:
+# In[15]:
 
 # your codes
 import requests
 from bs4 import BeautifulSoup
+import re
 
-response = requests.get("http://yp.518.com.tw/service-life.html?ctf=10") # requests 518 網頁 並拿到 response
+## 518 網頁伺服器無法容納多人同時 requests，請大家使用以下的網頁作 requests，其 html 的內容是一模一樣的
+response = requests.get("https://jimmy15923.github.io/518") # requests 518 網頁 並拿到 response
 print(response.encoding) # 印出 encoding 結果
 soup = BeautifulSoup(response.text, "lxml")  # 將 HTML 丟給 BeautifulSoup 作解析
 
-
-# In[ ]:
-
+# 找到電話資訊都藏在 li 標籤，屬性 class=comp_tel
 all_phone_text = [tag.text for tag in soup.find_all("li",class_="comp_tel")]
 
+# 把電話資訊的 list 存成一個大 string
 all_phone_text ="".join(all_phone_text)
 
+# 用 regular expression 把全部的電話都找出來
 phone_number = re.findall("0[1-9]+-[0-9]+", all_phone_text)
 print(phone_number)
 

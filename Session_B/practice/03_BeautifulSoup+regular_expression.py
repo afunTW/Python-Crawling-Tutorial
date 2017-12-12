@@ -52,7 +52,9 @@ print(soup.find_all("", text = re.compile("python")))  # 找出所有 text 內�
 
 # Q2. 請觀察[518 黃頁網](http://yp.518.com.tw/service-life.html?ctf=10)，並找出所有位在新北市的店家地址
 
-# In[8]:
+# In[ ]:
 
 # your codes
+## 518 網頁伺服器無法容納多人同時 requests，請大家使用以下的網頁作 requests，其 html 的內容是一模一樣的
+response = requests.get("https://jimmy15923.github.io/518")
 

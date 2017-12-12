@@ -19,11 +19,8 @@
 
 import requests
 from bs4 import BeautifulSoup
-import re
 import pandas as pd
-
-
-# In[2]:
+import re
 
 # 將要查詢的資料寫成 dictionary
 form_data = {
@@ -37,7 +34,7 @@ response_post = requests.post("https://www.thsrc.com.tw/tw/TimeTable/SearchResul
 soup_post = BeautifulSoup(response_post.text, "lxml") # 用 BeautifulSoup 解析網頁
 
 
-# In[3]:
+# In[2]:
 
 train_number = [tag.text for tag in soup_post.find_all("td", class_="column1")] # 找出所有 td 標籤 屬性 class=column1 的內容，並存成 List
 departure = [tag.text for tag in soup_post.find_all("td", class_="column3")] # 找出所有 td 標籤 屬性 class=column3 的內容，並存成 List
@@ -45,7 +42,7 @@ arrival = [tag.text for tag in soup_post.find_all("td", class_="column4")] # 找
 travel_time = [tag.text for tag in soup_post.find_all("td", class_="column2")] # 找出所有 td 標籤 屬性 class=column2 的內容，並存成 List
 
 
-# In[4]:
+# In[3]:
 
 highspeed_df = pd.DataFrame({"車次":train_number,
                           "出發時間":departure,
@@ -53,19 +50,24 @@ highspeed_df = pd.DataFrame({"車次":train_number,
                           "行車時間":travel_time}, columns = ["車次", "出發時間", "抵達時間", "行車時間"])
 
 
-# In[5]:
+# In[4]:
 
 highspeed_df 
 
 
-# In[6]:
+# In[5]:
 
-highspeed_df.to_csv("csv_results/demo6_highspeed_schedule.csv", index = False, encoding = "cp950")
+highspeed_df.to_csv("csv_results/demo6_highspeed_schedule_cp950.csv", index = False, encoding = "cp950")
 
 
 # ### 2. 使用 rows 來建立 DataFrame
 
-# In[7]:
+# In[6]:
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+import re
 
 # 將要查詢的資料寫成 dictionary
 form_data = {
@@ -79,12 +81,12 @@ response_post = requests.post("https://www.thsrc.com.tw/tw/TimeTable/SearchResul
 soup_post = BeautifulSoup(response_post.text, "lxml") # 用 BeautifulSoup 解析網頁
 
 
-# In[8]:
+# In[7]:
 
 highspeed_df = pd.DataFrame(columns = ["車次", "出發時間", "抵達時間", "行車時間"]) # 先建立好 DataFrame 
 
 
-# In[9]:
+# In[8]:
 
 for i in range(3):
     print(i)
@@ -93,18 +95,18 @@ for i in range(3):
     highspeed_df.loc[i] = row_contents # DataFrame 中， 第 i 行的值等於 row_text
 
 
-# In[10]:
+# In[9]:
 
 highspeed_df 
 
 
-# In[11]:
+# In[10]:
 
 # for windows
-highspeed_df.to_csv("csv_results/demo6_highspeed_schedule.csv", index = False, encoding = "cp950")
+highspeed_df.to_csv("csv_results/demo6_highspeed_schedule_cp950.csv", index = False, encoding = "cp950")
 
 # for linux
-highspeed_df.to_csv("csv_results/demo6_highspeed_schedule.csv", index = False, encoding = "utf-8")
+highspeed_df.to_csv("csv_results/demo6_highspeed_schedule_utf8.csv", index = False, encoding = "utf-8")
 
 
 # ## 練習 05 : 使用 pandas 將抓下來的資訊儲存成表格
@@ -114,27 +116,9 @@ highspeed_df.to_csv("csv_results/demo6_highspeed_schedule.csv", index = False, e
 # * 選擇要用 Rows 或 Columns 來組成 DataFrame
 # * 請將檔案儲存在 csv_results 這個資料夾
 
-# In[12]:
+# In[11]:
 
 # your codes
-import requests
-from bs4 import BeautifulSoup
-import re
-import pandas as pd
-
-response = requests.get("http://yp.518.com.tw/service-life.html?ctf=10")
-soup = BeautifulSoup(response.text, "lxml")
-
-name_phone = [tag.text for tag in soup.find_all("li", class_="comp_tel")]
-address = [tag.text for tag in soup.find_all("li", class_="comp_loca")]
-
-name_phone_str = "".join(name_phone)
-phone = re.findall("[0-9]{2}-[0-9]+", name_phone_str)
-name = [x.split("/")[0].strip() for x in name_phone]
-
-df = pd.DataFrame({'店名':name,
-                  "地址":address,
-                  "電話":phone}, columns = ["店名", "地址","電話"])
-df.to_csv("csv_results/practice05.csv", index = False, encoding="cp950")
-df
+## 518 網頁伺服器無法容納多人同時 requests，請大家使用以下的網頁作 requests，其 html 的內容是一模一樣的
+response = requests.get("https://jimmy15923.github.io/518")
 

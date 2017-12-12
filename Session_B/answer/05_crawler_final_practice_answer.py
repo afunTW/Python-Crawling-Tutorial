@@ -120,7 +120,7 @@ sale_df.head()
 # 
 # **如果真的沒有頭緒的話，可以先把問題簡化，嘗試看看把其中一頁的評論抓下來試試看!**
 
-# In[10]:
+# In[11]:
 
 import sys
 # your codes
@@ -136,29 +136,29 @@ star_all = []
 
 # 建立空 DataFrame 設定好 columns 名稱
 comment_df = pd.DataFrame(columns =  ["movie", "comments", "star"])
+    
+# 電影名稱的則是在 div 標籤，屬性 class=inform_title
+movie_name = soup.find("div", {"class":"inform_title"}).text
 
 # 對每頁的評論送 requests，並把評論文字、星等抓下來，存進剛剛建好的空 list
 for i in range(1, page):
-    sys.stdout.write("\r正在抓取玩命關頭電影評論第 " + str(i) + "  頁")
-    response = requests.get("https://tw.movies.yahoo.com/movieinfo_review.html/id=6664?sort=create_ts&order=desc&page=" + str(i) )
+    sys.stdout.write("\r正在抓取玩命關頭電影評論第 " + str(i) + " 頁")
+    response = requests.get("https://tw.movies.yahoo.com/movieinfo_review.html/id=6664?sort=update_ts&order=desc&page=" + str(i) )
     soup = BeautifulSoup(response.text, "html.parser")
 
-    # 評論文字存在 span 標籤裡，把每個人的評論先存成 list，再把這個 list 放進 comment_all 裡面
-    comment = [x.find("span").text for x in soup.find_all("div", {"class":"usercom_inner _c"})]
+    # 評論文字存在 span 且沒有任何屬性的標籤裡，把每個人的評論先存成 list，再把這個 list 放進 comment_all 裡面
+    comment = [x.find("span", {"class":None}).text for x in soup.find_all("div", {"class":"usercom_inner _c"})]
     comment_all.extend(comment)
 
     # 要抓取評論星等，首先定位出每個評論所在的位置，觀察後發現在 div 標籤，屬性 class=usercom_inner _c，評論星等就在這個 div 裡的 inputs 標籤
     star = [comment.find("input", {"name":"score"})['value'] for comment in soup.find_all("div", {"class":"usercom_inner _c"})]
     star_all.extend(star)
-    
-# 電影名稱的則是在 div 標籤，屬性 class=inform_title
-movie_name = soup.find("div", {"class":"inform_title"}).text
 
 # 建立 DataFrame
 comment_df = pd.DataFrame({"comments":comment_all,
                            "movie":movie_name,
                           "star":star_all})
 
-# 看前五筆資料
-comment_df.head()
+# 看最後五筆資料
+comment_df.tail()
 

@@ -42,7 +42,7 @@ soup.find_all("", {"class":re.compile("z+")})    # 找出所有屬性為 class �
 
 # In[5]:
 
-print(soup.find_all("", text = re.compile("python")))  # 找出所有 text 內容包含 python 文字的標籤
+print(soup.find_all("", text=re.compile("python")))  # 找出所有 text 內容包含 python 文字的標籤
 
 
 # ## 練習 03: BeautifulSoup + regular expression (8 mins)
@@ -61,7 +61,7 @@ import re
 # your codes
 response = requests.get("https://jimmy15923.github.io/example_page")
 soup = BeautifulSoup(response.text, 'lxml')
-print(soup.find_all("",href = re.compile("http://foundation.datasci.tw/")))
+print(soup.find_all("", href=re.compile("http://foundation.datasci.tw/")))
 
 
 # Q2. 請觀察[518 黃頁網](http://yp.518.com.tw/service-life.html?ctf=10)，並找出所有位在新北市的店家地址
@@ -76,7 +76,7 @@ import re
 # In[9]:
 
 # your codes
-response = requests.get("http://yp.518.com.tw/service-life.html?ctf=10")
+response = requests.get("https://jimmy15923.github.io/518")
 soup = BeautifulSoup(response.text, 'lxml')
-print(soup.find_all("li",class_="comp_loca", text = re.compile("新北")))
+print(soup.find_all("li", class_="comp_loca", text=re.compile("新北")))
 
