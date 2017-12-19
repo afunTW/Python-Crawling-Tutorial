@@ -37,6 +37,12 @@ pip3 install numpy pandas matplotlib scipy scikit-learn jieba wordcloud
 - 楊証琨 Cheng-Kun Yang：[jimmy15923@iis.sinica.edu.tw](jimmy15923@iis.sinica.edu.tw)
 - 楊鎮銘 Chen-Ming Yang：[afun@iis.sinica.edu.tw](afun@iis.sinica.edu.tw)
 
+## 請遵守別人定義的爬蟲規則
+
+有些網站會在目錄底下加上 robots.txt, 基本上這就是對方定義的爬蟲規則，請大家在練習爬蟲的時候要尊重對方的規則
+
+> robots.txt 詳細的語法與用途請參考 [wiki](https://zh.wikipedia.org/zh-tw/Robots.txt) 與 [google 文件](https://support.google.com/webmasters/answer/6062608?hl=zh-Hant)
+
 ## Q&A
 
 **Q: 有哪些常用的 API**
