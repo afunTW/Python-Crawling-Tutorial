@@ -1,11 +1,14 @@
-# Python 爬蟲實戰
+# Python-Crawling-Tutorial 基礎爬蟲實戰
 
-## 下載程式與投影片
+## 相關資源
 
-請於上課前下載好[投影片](https://goo.gl/CFR95x)與程式碼，程式碼可透過這個頁面右邊的 **Clone or download** 下載
+最新的投影片放在 [slideshare](https://www.slideshare.net/ChenMingYang/python-crawling-tutorial) 上, 會不定期更新, 程式碼可透過這個頁面右邊的 **Clone or download** 下載
 ![demo](https://user-images.githubusercontent.com/4820492/35319787-585ea0c4-011c-11e8-802a-02ae0dbc4044.png)
 
-## 課前準備: 安裝環境
+> 2017 年以前的投影片教材放在 [release](https://github.com/afunTW/Python-Crawling-Tutorial/releases), 但是部份實戰練習網站會失效
+> 或是可透過 [link](https://goo.gl/CFR95x) 下載投影片
+
+## 安裝環境
 
 ### Anaconda (建議)
 
