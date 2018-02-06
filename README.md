@@ -1,18 +1,24 @@
-# Python 爬蟲實戰
+# Python-Crawling-Tutorial 基礎爬蟲實戰
 
-## 下載程式與投影片
+## 相關資源
 
-請於上課前下載好[投影片](https://goo.gl/CFR95x)與程式碼，程式碼可透過這個頁面右邊的 **Clone or download** 下載
+最新的投影片放在 [slideshare](https://www.slideshare.net/ChenMingYang/python-crawling-tutorial) 上, 會不定期更新, 程式碼可透過這個頁面右邊的 **Clone or download** 下載
 ![demo](https://user-images.githubusercontent.com/4820492/35319787-585ea0c4-011c-11e8-802a-02ae0dbc4044.png)
 
-## 課前準備: 安裝環境
+> 2017 年以前的投影片教材放在 [release](https://github.com/afunTW/Python-Crawling-Tutorial/releases), 但是部份實戰練習網站會失效
+> 或是可透過 [link](https://goo.gl/CFR95x) 下載投影片
+
+## 安裝環境
 
 ### Anaconda (建議)
 
 - 下載 Python 3.6 版本 https://www.continuum.io/downloads
-- 本課程會使用到瀏覽器 Chrome，麻煩各位選擇自己電腦的平台安裝 Chrome https://www.google.com.tw/chrome/browser/desktop/index.html
-- 本課程的 Session A & B 將提供 .ipynb 檔案使用 jupyter notebook 進行，安裝完 Anaconda 後即可用內建 jupyter notebook 打開 .ipynb 檔，詳細教學可以參考資料夾中的 jupyter_notebook教學.pdf
-- 本課程會用到的套件較多，建議安裝 Anaconda，如有安裝 Anaconda 只需安裝以下套件
+- 練習題會使用到瀏覽器 Chrome，麻煩各位選擇自己電腦的平台安裝 [Chrome](https://www.google.com.tw/chrome/browser/desktop/index.html)
+- 動態網站的爬蟲也需要下載 webdriver，需要額外下載
+    - [Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+    - [Firefox](https://github.com/mozilla/geckodriver/releases)
+- 題目都是以 `jupyter notebook` 進行，安裝完 Anaconda 後即可用內建 `jupyter notebook` 打開 `.ipynb` 檔
+- 建議安裝 Anaconda，如有安裝 Anaconda 只需安裝以下套件
 
 ```sh
 $ pip install selenium tldextract Pillow
