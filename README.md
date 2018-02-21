@@ -2,7 +2,7 @@
 
 ## 相關資源
 
-最新的投影片放在 [slideshare](https://www.slideshare.net/ChenMingYang/python-crawling-tutorial) 上, 會不定期更新, 程式碼可透過這個頁面右邊的 **Clone or download** 下載
+最新的投影片放在 [slideshare](https://www.slideshare.net/ChenMingYang/python-crawling-tutorial-87165481) 上, 會不定期更新, 程式碼可透過這個頁面右邊的 **Clone or download** 下載
 ![demo](https://user-images.githubusercontent.com/4820492/35319787-585ea0c4-011c-11e8-802a-02ae0dbc4044.png)
 
 > 2017 年以前的投影片教材放在 [release](https://github.com/afunTW/Python-Crawling-Tutorial/releases), 但是部份實戰練習網站會失效
