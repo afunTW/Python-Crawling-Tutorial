@@ -8,6 +8,7 @@ requests = "*"
 lxml = "*"
 jupyter = "*"
 "beautifulsoup4" = "*"
+browsercookie = "*"
 
 [dev-packages]
 
