@@ -9,6 +9,11 @@ lxml = "*"
 jupyter = "*"
 "beautifulsoup4" = "*"
 browsercookie = "*"
+pandas = "*"
+fake-useragent = "*"
+pillow = "*"
+tldextract = "*"
+selenium = "*"
 
 [dev-packages]
 
